@@ -1,0 +1,43 @@
+version: '3.4'
+
+services:
+  infotrack.sales.searchengine.webapi:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=80
+      - GoogleBaseAddress=http://www.google.com/
+      - BingBaseAddress=http://www.bing.com/
+      - InfotrackWebAppBaseAddress=http://infotrack.sales.searchengine.webapp/
+      - GoogleSearch__ClassesContainUrl=BNeawe UPmit AP7Wnd lRVwie
+      - GoogleSearch__NumbersOfSearchResults=100
+      - ConnectionStrings__SearchEngineDatabase=Server=infotrack.sales.searchengine.sqlserver,1433;Database=InfotrackSearchEngine;User Id=sa;Password=MyPass@word;MultipleActiveResultSets=true;TrustServerCertificate=True
+    ports:
+      - "8000:80"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+    depends_on:
+      - infotrack.sales.searchengine.sqlserver
+
+  infotrack.sales.searchengine.webapp:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_HTTP_PORTS=80
+      - InfotrackWebApiBaseAddress=http://infotrack.sales.searchengine.webapi/
+    ports:
+      - "8001:80"
+    volumes:
+      - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
+      - ${APPDATA}/ASP.NET/Https:/home/app/.aspnet/https:ro
+
+  infotrack.sales.searchengine.sqlserver:
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=MyPass@word
+      - MSSQL_PID=Express
+    ports:
+      - "1434:1433"
+    volumes:
+      - "./data/:/var/opt/mssql/data/"
+      - "./log/:/var/opt/mssql/log/"
+      - "./secrets/:/var/opt/mssql/secrets/"

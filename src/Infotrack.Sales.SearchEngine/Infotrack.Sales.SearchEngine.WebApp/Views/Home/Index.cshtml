@@ -1,0 +1,85 @@
+﻿@model SearchViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+<div class="row">
+    <div class="col-md-9">
+        <form id="frmSearchRankings" method="post" action="/Home/Index">
+            <div class="form-group" style="margin-top:10px">
+                <label asp-for="Provider" class="control-label"></label>
+                <input asp-for="Provider" class="form-control" readonly value="Google" />
+            </div>
+            <div class="form-group" style="margin-top:10px">
+                <label asp-for="Url" class="control-label"></label>
+                <input id="searchUrl" asp-for="Url" class="form-control" value="www.infotrack.co.uk" />
+                <span asp-validation-for="Url" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="margin-top:10px">
+                <label asp-for="Keyword" class="control-label"></label>
+                <input id="searchKeyword" asp-for="Keyword" class="form-control" value="land registry search" />
+                <span asp-validation-for="Keyword" class="text-danger"></span>
+            </div>
+            <div class="form-group" style="margin-top:10px">
+                <a class="btn btn-primary" id="btnSearch">Submit</a>
+            </div>
+        </form>
+    </div>
+    <div style="margin-top:20px">
+        <h3 id="searchResult" class="display-7"></h3>
+    </div>
+</div>
+<div>
+    <canvas id="myChart"></canvas>
+    <button style="display:none" id="btnFilterHour" class="btn btn-warning" onclick="filterTime('hour')">Hour</button>
+    <button style="display:none" id="btnFilterDaily" class="btn btn-success" onclick="filterTime('day')">Daily</button>
+    <button style="display:none" id="btnFilterWeekly" class="btn btn-info" onclick="filterTime('week')">Weekly</button>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        await Html.RenderPartialAsync("_ChartScriptsPartial");
+    }
+
+    <script type="text/javascript">
+        $(function () {
+            $("#btnSearch").click(function () {
+                var form = $('#frmSearchRankings');
+                if (form.valid()) {
+                    $.ajax({
+                        type: "POST",
+                        url: form.attr('action'),
+                        data: form.serialize(),
+                        success: function (response) {
+                            $('#searchResult').html(response);
+                            LoadHistories();
+                        }
+                    });
+                }
+            });
+        });
+
+        function LoadHistories() {
+            $.ajax({
+                type: "GET",
+                url: '@Url.Action("LoadHistories", "Home")',
+                data: {
+                    url: $('#searchUrl').val(), 
+                    keyword: $('#searchKeyword').val(), 
+                    fromDate: getFirstDayOfTheMonth(), 
+                    toDate: getLastDayOfTheMonth()
+                },
+                success: function (response) {
+                    if (response.errorMessage) return;
+
+                    LoadChart(response);
+                }
+            });
+        }
+    </script>
+}

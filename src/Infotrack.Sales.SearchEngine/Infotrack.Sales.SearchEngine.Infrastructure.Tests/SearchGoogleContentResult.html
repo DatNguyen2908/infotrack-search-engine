@@ -1,0 +1,948 @@
+﻿<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image">
+    <title>land registry search - Tìm trên Google</title>
+    <script nonce="mNvlqATyAynU-XLJ7LXqfA">
+    (function () {
+            document.documentElement.addEventListener("submit", function (b) { var a; if (a = b.target) { var c = a.getAttribute("data-submitfalse"); a = "1" === c || "q" === c && !a.elements.q.value ? !0 : !1 } else a = !1; a && (b.preventDefault(), b.stopPropagation()) }, !0); document.documentElement.addEventListener("click", function (b) { var a; a: { for (a = b.target; a && a !== document.documentElement; a = a.parentElement)if ("A" === a.tagName) { a = "1" === a.getAttribute("data-nohref"); break a } a = !1 } a && b.preventDefault() }, !0);
+        }).call(this); (function () { var a = window.performance; window.start = Date.now(); a: { var b = window; if (a) { var c = a.timing; if (c) { var d = c.navigationStart, f = c.responseStart; if (f > d && f <= window.start) { window.start = f; b.wsrt = f - d; break a } } a.now && (b.wsrt = Math.floor(a.now())) } } window.google = window.google || {}; var h = function (g) { g && g.target.setAttribute("data-iml", String(Date.now())) }; document.documentElement.addEventListener("load", h, !0); google.rglh = function () { document.documentElement.removeEventListener("load", h, !0) }; }).call(this); (function () { window.google.erd = { jsr: 1, bv: 1995, de: true }; })(); (function () {
+            var sdo = false; var mei = 10;
+            var h = this || self; var k, l = null != (k = h.mei) ? k : 1, n, p = null != (n = h.sdo) ? n : !0, q = 0, r, t = google.erd, v = t.jsr; google.ml = function (a, b, d, m, e) {
+                e = void 0 === e ? 2 : e; b && (r = a && a.message); void 0 === d && (d = {}); d.cad = "ple_" + google.ple + ".aple_" + google.aple; if (google.dl) return google.dl(a, e, d, !0), null; b = d; if (0 > v) { window.console && console.error(a, b); if (-2 === v) throw a; b = !1 } else b = !a || !a.message || "Error loading script" === a.message || q >= l && !m ? !1 : !0; if (!b) return null; q++; d = d || {}; b = encodeURIComponent; var c = "/gen_204?atyp=i&ei=" + b(google.kEI); google.kEXPI && (c += "&jexpid=" + b(google.kEXPI)); c += "&srcpg=" + b(google.sn) + "&jsr=" + b(t.jsr) +
+                    "&bver=" + b(t.bv); var f = a.lineNumber; void 0 !== f && (c += "&line=" + f); var g = a.fileName; g && (0 < g.indexOf("-extension:/") && (e = 3), c += "&script=" + b(g), f && g === window.location.href && (f = document.documentElement.outerHTML.split("\n")[f], c += "&cad=" + b(f ? f.substring(0, 300) : "No script found."))); google.ple && 1 === google.ple && (e = 2); c += "&jsel=" + e; for (var u in d) c += "&", c += b(u), c += "=", c += b(d[u]); c = c + "&emsg=" + b(a.name + ": " + a.message); c = c + "&jsst=" + b(a.stack || "N/A"); 12288 <= c.length && (c = c.substr(0, 12288)); a = c; m || google.log(0, "", a); return a
+            }; window.onerror = function (a, b, d, m, e) { r !== a && (a = e instanceof Error ? e : Error(a), void 0 === d || "lineNumber" in a || (a.lineNumber = d), void 0 === b || "fileName" in a || (a.fileName = b), google.ml(a, !1, void 0, !1, "SyntaxError" === a.name || "SyntaxError" === a.message.substring(0, 11) || -1 !== a.message.indexOf("Script error") ? 3 : 0)); r = null; p && q >= l && (window.onerror = null) };
+        })(); (function () { var c = [], e = 0; window.ping = function (b) { -1 == b.indexOf("&zx") && (b += "&zx=" + Date.now()); var a = new Image, d = e++; c[d] = a; a.onerror = a.onload = a.onabort = function () { delete c[d] }; a.src = b }; }).call(this);</script>
+    <style>
+        a {
+            color: #1a0dab;
+            text-decoration: none;
+            tap-highlight-color: rgba(0,0,0,.10)
+        }
+
+            a:visited {
+                color: #4b11a8
+            }
+
+            a:hover {
+                text-decoration: underline
+            }
+
+        img {
+            border: 0
+        }
+
+        html {
+            font-family: arial,sans-serif;
+            font-size: 14px;
+            line-height: 20px;
+            text-size-adjust: 100%;
+            color: #3c4043;
+            word-wrap: break-word;
+            background-color: #fff
+        }
+
+        .bz1lBb {
+            background-color: #fff;
+            height: 93px;
+        }
+
+        .KP7LCb {
+            background-color: #fff;
+            padding-left: 4px
+        }
+
+        .BsXmcf {
+            position: absolute;
+            height: 1px;
+            left: 0;
+            right: 0;
+            background-color: #dadce0
+        }
+
+        .cOl4Id {
+            background-color: #fff
+        }
+
+        .bRsWnc {
+            overflow: hidden
+        }
+
+        .N6RWV {
+            height: 51px
+        }
+
+        .Uv67qb {
+            font-size: 14px;
+            line-height: 20px;
+            font-weight: bold;
+            display: flex
+        }
+
+            .Uv67qb a, .Uv67qb span {
+                color: #5e5e5e;
+                height: 20px;
+                margin: 4px 12px 1px;
+                display: block;
+                flex: none;
+                text-align: center;
+            }
+
+        .OXXup {
+            border-bottom: 2px solid #1f1f1f
+        }
+
+        .Uv67qb .OXXup {
+            font-weight: bold;
+            color: #1f1f1f
+        }
+
+        a.eZt8xd:visited {
+            color: #5e5e5e
+        }
+
+        .FElbsf {
+            border-left: 1px solid #dadce0
+        }
+
+        header article {
+            overflow: visible
+        }
+
+        .Pg70bf {
+            height: 39px;
+            display: box;
+            display: flex;
+            display: flex;
+            width: 100%
+        }
+
+        .H0PQec {
+            position: relative;
+            flex: 1
+        }
+
+        .Pg70bf {
+            height: 26px
+        }
+
+        .hlm7Y {
+            height: 46px;
+            margin-top: 26px;
+            border-radius: 25px;
+            width: auto;
+            background: #fff;
+            box-shadow: 0px 2px 6px rgba(60,64,67,0.16)
+        }
+
+        .sbc {
+            display: flex
+        }
+
+        .Pg70bf input {
+        }
+
+        .x {
+            width: 26px;
+            color: #70757a;
+            line-height: 40px;
+            margin-top: 3px;
+            font: 27px/38px arial, sans-serif
+        }
+
+        #qdClwb {
+            flex: 0 0 auto;
+            padding: 0;
+            height: 33px;
+            margin-top: 5px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            width: 48px;
+            background: #fff;
+            border: 0;
+            border-left: 1px solid #dadce0;
+            background-repeat: no-repeat;
+            background-image: url(data:image/gif;base64,R0lGODlhJAAjAOYAAP////7+//v8//b5//z9//H2//T4/9Xl/uTu/+ry/+zz/+/1/1GX+1aa+1mc+1+f+2ml+3eu/H6y/IK0/IO1/Iq5/JG9/ZG9/JfB/Z3E/Z7F/Z/F/ajL/anL/azN/bjU/rrV/b3X/sHa/sPb/sTc/sbd/svg/tDj/tfn/tzq/t/s/+bw/+ny/+vz//X5//r8/w9x+RV1+Rd2+Rh3+Rl3+Rp3+Rp4+Rt4+Rt5+Rx5+R16+R56+R96+R97+SB7+SF8+SJ8+SJ9+SN9+SR9+SV++SeA+Sh/+SmA+SqB+SuB+iuB+SyC+S2C+jKF+jKG+jSH+jWH+jWI+jqK+jyL+j+N+kSQ+kWR+kaR+keS+kmT+k6W+lOZ+1Sa+1ab+1eb+1ec+1ic+1md+1qd+1ue+1ye+12f+16f+2el+2mm+2un+26p/HSt+3au/IS2/IW3/Ia3/Iq6/JK+/JbB/JfB/JjC/JrD/KLI/anM/arN/b/Z/cHa/d/s/uLu/ufx//3+/////yH5BAUAAH8ALAAAAAAkACMAAAf4gACCg4SFhoeIiYqLjI2Oj5CRkpOUlZaXmAAJeXEUGyUEmYIBGlRENTE7S2UmohM8PVVoaw1OMlMjlwIWQUdvCoIDJV47UCiWKU02c4YFWDRnoZQXNmAuhyJHUXyVZDYViC5ZQCCVWjN4iH5hMXaVEDNyiAtXQyGVdDMPL4cmTE0qKp1Q4gODoRdfZES45MbGEwwGBh0wIwTKiksGIvjowYANHDVTcBSxUofFpQBtpOSgEePGDy4kwsAY0wLTngwS0mTQc82DER1igIkq1AGJDgc1hxLqkCSHgwRKCd1JoqNLn6iDOAjZchWroA8IvIodS7as2bOWAgEAOw==)
+        }
+
+        .sc {
+            font-size: 16px;
+            position: absolute;
+            top: 48px;
+            left: 0;
+            right: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,.2);
+            z-index: 2;
+            background-color: #fff
+        }
+
+            .sc > div {
+                padding: 10px 20px
+            }
+
+        .scs {
+            background-color: #fafafa;
+        }
+
+        .noHIxc {
+            display: block;
+            font-size: 16px;
+            padding: 0 0 0 8px;
+            flex: 1;
+            height: 35px;
+            outline: none;
+            border: none;
+            width: 100%;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            overflow: hidden;
+            padding: 4px 0 0 20px
+        }
+
+        .sbc input[type=text] {
+            background: none
+        }
+
+        html {
+            background-color: #fff;
+        }
+
+        body {
+            padding: 0;
+        }
+
+        body {
+            margin: 0 auto 0 156px;
+            max-width: 652px;
+            min-width: 652px;
+            padding: 0 8px
+        }
+
+        .cOl4Id {
+            letter-spacing: -1px;
+            text-align: center;
+            font: 22pt Futura, Arial, sans-serif;
+            font-smoothing: antialiased;
+            padding: 32px 28px 0 24px;
+            position: absolute;
+            left: 0;
+            top: 0
+        }
+
+            .cOl4Id span {
+                display: inline-block
+            }
+
+        .V6gwVd {
+            color: #4285f4
+        }
+
+        .iWkuvd {
+            color: #ea4335
+        }
+
+        .cDrQ7 {
+            color: #fcc934
+        }
+
+        .ntlR9 {
+            color: #34a853
+        }
+
+        .tJ3Myc {
+            -webkit-transform: rotate(-20deg);
+            position: relative;
+            left: -1px;
+            display: inline-block
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 18px
+        }
+
+            footer a, footer a:visited, .smiUbb {
+                color: #70757a
+            }
+
+        .xeDNfc {
+            margin: 0 13px;
+            display: inline-block
+        }
+
+        #EOlPnc {
+            margin-top: 36px
+        }
+
+            #EOlPnc > div {
+                margin: 20px
+            }
+
+        .Srfpq {
+            color: #70757a
+        }
+    </style>
+</head>
+<body jsmodel="hspDDf ">
+    <header id="hdr">
+        <script nonce="mNvlqATyAynU-XLJ7LXqfA">
+    (function () {
+                var k = this || self, l = function (a) { var b = typeof a; return "object" == b && null != a || "function" == b }, m = function (a, b) { function c() { } c.prototype = b.prototype; a.l = b.prototype; a.prototype = new c; a.prototype.constructor = a; a.s = function (d, e, f) { for (var g = Array(arguments.length - 2), h = 2; h < arguments.length; h++)g[h - 2] = arguments[h]; return b.prototype[e].apply(d, g) } }; var n = Array.prototype.indexOf ? function (a, b) { return Array.prototype.indexOf.call(a, b, void 0) } : function (a, b) { if ("string" === typeof a) return "string" !== typeof b || 1 != b.length ? -1 : a.indexOf(b, 0); for (var c = 0; c < a.length; c++)if (c in a && a[c] === b) return c; return -1 }; var p = function (a) { return "string" == typeof a.className ? a.className : a.getAttribute && a.getAttribute("class") || "" }, q = function (a, b) { "string" == typeof a.className ? a.className = b : a.setAttribute && a.setAttribute("class", b) }, r = function (a, b) { a.classList ? b = a.classList.contains(b) : (a = a.classList ? a.classList : p(a).match(/\S+/g) || [], b = 0 <= n(a, b)); return b }, v = function () {
+                    var a = t, b = u; a.classList ? a.classList.remove(b) : r(a, b) && q(a, Array.prototype.filter.call(a.classList ? a.classList : p(a).match(/\S+/g) || [], function (c) {
+                        return c !=
+                            b
+                    }).join(" "))
+                }; function w() { var a = k.navigator; return a && (a = a.userAgent) ? a : "" }; var x = function (a) { x[" "](a); return a }; x[" "] = function () { }; var y = -1 != w().indexOf("Gecko") && !(-1 != w().toLowerCase().indexOf("webkit") && -1 == w().indexOf("Edge")) && !(-1 != w().indexOf("Trident") || -1 != w().indexOf("MSIE")) && -1 == w().indexOf("Edge"); var z = function (a, b) { this.type = a; this.target = b }; z.prototype.g = function () { }; var A = function () { if (!k.addEventListener || !Object.defineProperty) return !1; var a = !1, b = Object.defineProperty({}, "passive", { get: function () { a = !0 } }); try { var c = function () { }; k.addEventListener("test", c, b); k.removeEventListener("test", c, b) } catch (d) { } return a }(); var C = function (a) {
+                    z.call(this, a ? a.type : ""); this.relatedTarget = this.target = null; this.button = this.screenY = this.screenX = this.clientY = this.clientX = 0; this.key = ""; this.keyCode = 0; this.metaKey = this.shiftKey = this.altKey = this.ctrlKey = !1; this.state = null; this.pointerId = 0; this.pointerType = ""; this.i = null; if (a) {
+                        var b = this.type = a.type, c = a.changedTouches && a.changedTouches.length ? a.changedTouches[0] : null; this.target = a.target || a.srcElement; var d = a.relatedTarget; if (d) {
+                            if (y) {
+                                a: {
+                                    try { x(d.nodeName); var e = !0; break a } catch (f) { } e =
+                                        !1
+                                } e || (d = null)
+                            }
+                        } else "mouseover" == b ? d = a.fromElement : "mouseout" == b && (d = a.toElement); this.relatedTarget = d; c ? (this.clientX = void 0 !== c.clientX ? c.clientX : c.pageX, this.clientY = void 0 !== c.clientY ? c.clientY : c.pageY, this.screenX = c.screenX || 0, this.screenY = c.screenY || 0) : (this.clientX = void 0 !== a.clientX ? a.clientX : a.pageX, this.clientY = void 0 !== a.clientY ? a.clientY : a.pageY, this.screenX = a.screenX || 0, this.screenY = a.screenY || 0); this.button = a.button; this.keyCode = a.keyCode || 0; this.key = a.key || ""; this.ctrlKey = a.ctrlKey; this.altKey = a.altKey; this.shiftKey = a.shiftKey; this.metaKey = a.metaKey; this.pointerId = a.pointerId || 0; this.pointerType = "string" === typeof a.pointerType ? a.pointerType : B[a.pointerType] || ""; this.state = a.state; this.i = a; a.defaultPrevented && C.l.g.call(this)
+                    }
+                }; m(C, z); var B = { 2: "touch", 3: "pen", 4: "mouse" }; C.prototype.g = function () { C.l.g.call(this); var a = this.i; a.preventDefault ? a.preventDefault() : a.returnValue = !1 }; var D = "closure_listenable_" + (1E6 * Math.random() | 0); var E = 0; var F = function (a, b, c, d, e) { this.listener = a; this.proxy = null; this.src = b; this.type = c; this.capture = !!d; this.i = e; this.key = ++E; this.g = this.j = !1 }, G = function (a) { a.g = !0; a.listener = null; a.proxy = null; a.src = null; a.i = null }; var H = function (a) { this.src = a; this.g = {}; this.i = 0 }; H.prototype.add = function (a, b, c, d, e) { var f = a.toString(); a = this.g[f]; a || (a = this.g[f] = [], this.i++); var g; a: { for (g = 0; g < a.length; ++g) { var h = a[g]; if (!h.g && h.listener == b && h.capture == !!d && h.i == e) break a } g = -1 } -1 < g ? (b = a[g], c || (b.j = !1)) : (b = new F(b, this.src, f, !!d, e), b.j = c, a.push(b)); return b }; var I = "closure_lm_" + (1E6 * Math.random() | 0), J = {}, K = 0, M = function (a, b, c, d, e) { if (d && d.once) return L(a, b, c, d, e); if (Array.isArray(b)) { for (var f = 0; f < b.length; f++)M(a, b[f], c, d, e); return null } c = N(c); return a && a[D] ? a.g(b, c, l(d) ? !!d.capture : !!d, e) : O(a, b, c, !1, d, e) }, O = function (a, b, c, d, e, f) { if (!b) throw Error("a"); var g = l(e) ? !!e.capture : !!e, h = P(a); h || (a[I] = h = new H(a)); c = h.add(b, c, d, g, f); if (c.proxy) return c; d = Q(); c.proxy = d; d.src = a; d.listener = c; if (a.addEventListener) A || (e = g), void 0 === e && (e = !1), a.addEventListener(b.toString(), d, e); else if (a.attachEvent) a.attachEvent(R(b.toString()), d); else if (a.addListener && a.removeListener) a.addListener(d); else throw Error("b"); K++; return c }, Q = function () { var a = S, b = function (c) { return a.call(b.src, b.listener, c) }; return b }, L = function (a, b, c, d, e) { if (Array.isArray(b)) { for (var f = 0; f < b.length; f++)L(a, b[f], c, d, e); return null } c = N(c); return a && a[D] ? a.i(b, c, l(d) ? !!d.capture : !!d, e) : O(a, b, c, !0, d, e) }, T = function (a) { if ("number" !== typeof a && a && !a.g) { var b = a.src; if (b && b[D]) b.v(a); else { var c = a.type, d = a.proxy; b.removeEventListener ? b.removeEventListener(c, d, a.capture) : b.detachEvent ? b.detachEvent(R(c), d) : b.addListener && b.removeListener && b.removeListener(d); K--; if (c = P(b)) { d = a.type; if (d in c.g) { var e = c.g[d], f = n(e, a), g; (g = 0 <= f) && Array.prototype.splice.call(e, f, 1); g && (G(a), 0 == c.g[d].length && (delete c.g[d], c.i--)) } 0 == c.i && (c.src = null, b[I] = null) } else G(a) } } }, R = function (a) { return a in J ? J[a] : J[a] = "on" + a }, S = function (a, b) { if (a.g) a = !0; else { b = new C(b, this); var c = a.listener, d = a.i || a.src; a.j && T(a); a = c.call(d, b) } return a }, P = function (a) { a = a[I]; return a instanceof H ? a : null }, U = "__closure_events_fn_" + (1E9 * Math.random() >>> 0), N = function (a) { if ("function" === typeof a) return a; a[U] || (a[U] = function (b) { return a.handleEvent(b) }); return a[U] }; var u, t = document.documentElement, V; function W() { T(V); V = L(t, "mousedown", function () { v(); X() }, { capture: !0 }) } function X() { T(V); V = M(t, "keydown", function (a) { if (9 === a.keyCode) { a = t; var b = u; if (a.classList) a.classList.add(b); else if (!r(a, b)) { var c = p(a); q(a, c + (0 < c.length ? " " + b : b)) } W() } }) }; u = "zAoYTe"; X();
+            }).call(this);</script><div class="cOl4Id"><a href="/?sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQOwgC"><span class="V6gwVd">G</span><span class="iWkuvd">o</span><span class="cDrQ7">o</span><span class="V6gwVd">g</span><span class="ntlR9">l</span><span class="iWkuvd tJ3Myc">e</span></a></div><div class="bz1lBb"><form class="Pg70bf hlm7Y" id="sf"><input name="num" value="100" type="hidden"><input name="sca_esv" value="a4b2eda68720e90d" type="hidden"><input name="sca_upv" value="1" type="hidden"><input name="ie" value="ISO-8859-1" type="hidden"><div class="H0PQec"><div class="sbc esbc"><input class="noHIxc" value="land registry search" autocapitalize="none" autocomplete="off" name="q" spellcheck="false" type="text"><input name="oq" type="hidden"><input name="aqs" type="hidden"><div class="x">×</div><div class="sc"></div></div></div><button id="qdClwb" type="submit"></button></form></div><noscript><meta content="0;url=/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;gbv=1&amp;sei=TLosZv3cIZGo1e8Pq5WbyAE" http-equiv="refresh">
+        <style>
+            table, div, span, p {
+                display: none
+            }
+        </style><div style="display:block">Xin vui lòng nh&#7845;n <a href="/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;gbv=1&amp;sei=TLosZv3cIZGo1e8Pq5WbyAE">vào &#273;ây</a> n&#7871;u b&#7841;n không &#273;&#432;&#7907;c chuy&#7875;n &#273;i trong vòng vài giây.</div></noscript>
+    </header><div id="main">
+        <div><div class="KP7LCb"> <div class="bRsWnc"> <div class="N6RWV"> <div class="Pg70bf Uv67qb"> <span class="OXXup">T&#7845;t c&#7843;</span><a class="eZt8xd" href="/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;tbm=nws&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ_AUIBigB">Tin t&#7913;c</a><a class="eZt8xd" href="/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;tbm=vid&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ_AUIBygC">Video</a>  <a href="/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;tbm=isch&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ_AUICCgD">Hình &#7843;nh</a>  <a href="/url?q=/search%3Fq%3Dland%2Bregistry%2Bsearch%26num%3D100%26sca_esv%3Da4b2eda68720e90d%26sca_upv%3D1%26ie%3DUTF-8%26tbm%3Dshop%26source%3Dlnms%26ved%3D1t:200713%26ictx%3D111&amp;opi=89978449&amp;sa=U&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQiaAMCAkoBA&amp;usg=AOvVaw1_6_7At0bodTUeE4hWQTgj">Mua s&#7855;m</a>  <a href="/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;tbm=bks&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ_AUICigF">Sách</a>  <div class="FElbsf"><a href="/advanced_search" style="white-space:nowrap" id="st-toggle" role="button">Các công c&#7909; tìm ki&#7871;m</a></div> </div> </div> </div> </div><div class="Pg70bf wEsjbd Gx5Zad xpd EtOod pkphOe" style="display:none" id="st-card">
+        <style>
+            .wEsjbd {
+                height: 44px;
+                white-space: nowrap
+            }
+
+            .coPU8c {
+                height: 60px;
+                overflow-scrolling: touch;
+                overflow-x: auto;
+                overflow-y: hidden
+            }
+
+            .Xj2aue {
+                height: 44px;
+                overflow: hidden
+            }
+
+            .RnNGze {
+                margin: 11px 16px
+            }
+
+            .wEsjbd div, .wEsjbd a, .wEsjbd li {
+                outline-width: 0;
+                outline: none
+            }
+        </style><div class="Xj2aue"><div class="coPU8c"><div class="RnNGze">
+        <style>
+            .PA9J5 {
+                display: inline-block
+            }
+
+            .RXaOfd {
+                display: inline-block;
+                height: 22px;
+                position: relative;
+                padding-top: 0;
+                padding-bottom: 0;
+                padding-right: 16px;
+                padding-left: 0;
+                line-height: 22px;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-size: 12px;
+                color: #70757a
+            }
+
+            .sa1toc {
+                background: #fff;
+                display: none;
+                position: absolute;
+                border: 1px solid #dadce0;
+                box-shadow: 0 2px 4px rgba(0,0,0,.3);
+                margin: 0;
+                white-space: nowrap;
+                z-index: 103;
+                line-height: 17px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 0
+            }
+
+            .PA9J5:hover .sa1toc {
+                display: block
+            }
+
+            .mGSy8d a:active, .RXaOfd:active {
+                color: #4285f4
+            }
+        </style><div class="PA9J5"><div class="RXaOfd" role="button" tabindex="0">
+        <style>
+            .TWMOUc {
+                display: inline-block;
+                padding-right: 14px;
+                white-space: nowrap
+            }
+
+            .vQYuGf {
+                font-weight: bold
+            }
+
+            .OmTIzf {
+                border-color: #909090 transparent;
+                border-style: solid;
+                border-width: 4px 4px 0 4px;
+                width: 0;
+                height: 0;
+                margin-left: -10px;
+                top: 50%;
+                margin-top: -2px;
+                position: absolute
+            }
+
+            .RXaOfd:active .OmTIzf {
+                border-color: #4285f4 transparent
+            }
+        </style><div class="TWMOUc">M&#7885;i ngôn ng&#7919;</div><span class="OmTIzf"></span></div><ul class="sa1toc ozatM">
+        <style>
+            .ozatM {
+                font-size: 12px;
+                text-transform: uppercase
+            }
+
+                .ozatM .yNFsl, .ozatM li {
+                    list-style-type: none;
+                    list-style-position: outside;
+                    list-style-image: none
+                }
+
+            .yNFsl.SkUj4c, .yNFsl a {
+                color: #70757a;
+                text-decoration: none;
+                padding: 6px 44px 6px 14px;
+                line-height: 17px;
+                display: block
+            }
+
+            .SkUj4c {
+                background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark2.png);
+                background-position: right center;
+                background-repeat: no-repeat
+            }
+
+                .SkUj4c:active {
+                    background-color: #f8f9fa
+                }
+        </style><li class="yNFsl SkUj4c">M&#7885;i ngôn ng&#7919;</li><li class="yNFsl"><a href="/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;source=lnt&amp;tbs=lr:lang_1vi&amp;lr=lang_vi&amp;sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQpwUIDA">Tìm nh&#7919;ng trang Ti&#7871;ng Vi&#7879;t</a></li></ul></div><div class="PA9J5"><div class="RXaOfd" role="button" tabindex="0"><div class="TWMOUc">M&#7885;i lúc</div><span class="OmTIzf"></span></div><ul class="sa1toc ozatM"><li class="yNFsl SkUj4c">M&#7885;i lúc</li><li class="yNFsl"><a href="/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:h&amp;sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQpwUIDg"> Gi&#7901; qua</a></li><li class="yNFsl"><a href="/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:d&amp;sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQpwUIDw"> 24 gi&#7901; qua</a></li><li class="yNFsl"><a href="/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:w&amp;sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQpwUIEA"> Tu&#7847;n qua</a></li><li class="yNFsl"><a href="/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:m&amp;sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQpwUIEQ"> Tháng qua</a></li><li class="yNFsl"><a href="/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:y&amp;sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQpwUIEg"> N&#259;m qua</a></li></ul></div><div class="PA9J5"><div class="RXaOfd" role="button" tabindex="0"><div class="TWMOUc">Tâ&#769;t ca&#777; k&#7871;t qu&#7843;</div><span class="OmTIzf"></span></div><ul class="sa1toc ozatM"><li class="yNFsl SkUj4c">Tâ&#769;t ca&#777; k&#7871;t qu&#7843;</li><li class="yNFsl"><a href="/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;source=lnt&amp;tbs=li:1&amp;sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQpwUIFA">Nguyên v&#259;n</a></li></ul></div></div></div></div>
+        <script nonce="mNvlqATyAynU-XLJ7LXqfA">(function () { var a = document.getElementById("st-toggle"), b = document.getElementById("st-card"); a && b && a.addEventListener("click", function (c) { b.style.display = b.style.display ? "" : "none"; c.preventDefault() }, !1); }).call(this);</script></div></div><div class="BsXmcf"></div>
+        <style>
+            .Gx5Zad {
+                margin-bottom: 30px;
+                margin: 0px 0px 8px;
+            }
+
+            .pkphOe {
+                font-size: 14px;
+                line-height: 22px;
+            }
+
+            .EtOod > *:first-child {
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px
+            }
+
+            .EtOod > *:last-child {
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px
+            }
+
+            .EtOod.avPKgf > *:last-child {
+                border-bottom-left-radius: 4px
+            }
+
+            .EtOod > .qxDOhb > *:first-child {
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px
+            }
+
+            .EtOod > .qxDOhb > *:last-child {
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px
+            }
+
+            .fP1Qef {
+                background: transparent !important;
+                box-shadow: none !important;
+                border: none !important
+            }
+
+            .rl7ilb {
+                display: block;
+                clear: both
+            }
+
+            .egMi0 {
+                margin-bottom: -23px
+            }
+
+            .kCrYT {
+                padding: 16px 14px 12px
+            }
+
+            a.fdYsqf {
+                color: #4b11a8
+            }
+
+            .sCuL3 {
+                position: absolute;
+                width: 100%;
+                top: 0;
+                left: 0;
+                padding-top: 1px;
+                margin-bottom: -1px
+            }
+
+            .j039Wc {
+                padding-top: 28px;
+                margin-bottom: -1px
+            }
+
+            .DnJfK {
+                position: relative
+            }
+
+            .l97dzf {
+                font-weight: 400
+            }
+
+            .zBAuLc {
+                line-height: normal;
+                margin: 0;
+                padding: 0
+            }
+
+            .BNeawe {
+                white-space: pre-line;
+                word-wrap: break-word
+            }
+
+            .vvjwJb {
+                color: #1a0dab;
+                font-size: 20px;
+                line-height: 26px
+            }
+
+                a:visited .vvjwJb, .vvjwJb a:visited {
+                    color: #4b11a8
+                }
+
+                .vvjwJb.HrGdeb {
+                    color: #fff
+                }
+
+                    a:visited .vvjwJb.HrGdeb, .vvjwJb.HrGdeb a:visited {
+                        color: rgba(255,255,255,.70)
+                    }
+
+            .UPmit {
+                font-size: 14px;
+                line-height: 22px
+            }
+
+                .UPmit.HrGdeb {
+                    color: rgba(255,255,255,.70)
+                }
+
+                .UPmit.AP7Wnd {
+                    color: #202124
+                }
+
+            .lRVwie {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden
+            }
+
+            .Ap5OSd {
+                padding-bottom: 12px
+            }
+
+            .s3v9rd {
+                font-size: 14px;
+                line-height: 22px
+            }
+
+                .s3v9rd.HrGdeb {
+                    color: #fff
+                }
+
+                .s3v9rd.AP7Wnd {
+                    color: #202124
+                }
+
+            .mSx1Ee {
+                padding-left: 48px;
+                margin: 0
+            }
+
+            .v9i61e {
+                padding-bottom: 8px
+            }
+
+            .XLloXe {
+                color: #1a0dab;
+                font-size: 14px;
+                line-height: 20px
+            }
+
+                a:visited .XLloXe, .XLloXe a:visited {
+                    color: #4b11a8
+                }
+
+                .XLloXe.HrGdeb {
+                    color: #fff
+                }
+
+                    a:visited .XLloXe.HrGdeb, .XLloXe.HrGdeb a:visited {
+                        color: rgba(255,255,255,.70)
+                    }
+
+            .r0bn4c.tr0dw {
+                color: rgba(255,255,255,.70)
+            }
+
+            .r0bn4c.rQMQod {
+                color: #70757a
+            }
+
+            .cAuxJf {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 26px;
+                color: #1f1f1f;
+                margin: 0
+            }
+
+            .tAd8D {
+                font-size: 14px;
+                line-height: 20px
+            }
+
+                .tAd8D.HrGdeb {
+                    color: rgba(255,255,255,.70)
+                }
+
+                .tAd8D.AP7Wnd {
+                    color: #70757a
+                }
+
+            .Xb5VRe {
+                color: #1a0dab
+            }
+
+            a:visited .Xb5VRe {
+                color: #4b11a8
+            }
+
+            .Xb5VRe.tr0dw {
+                color: #fff
+            }
+
+            a:visited .Xb5VRe.tr0dw {
+                color: rgba(255,255,255,.70)
+            }
+
+            .Xdlr0d {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin: 0 -8px;
+                padding: 2px 0 16px 22px;
+                margin-top: -2px;
+                transform: translate3d(0,0,0)
+            }
+
+            .idg8be {
+                display: table;
+                border-collapse: separate;
+                border-spacing: 8px 0;
+                margin: 0 -8px;
+                padding-right: 14px
+            }
+
+            .BVG0Nb {
+                display: table-cell;
+                vertical-align: top;
+                overflow: hidden;
+            }
+
+            .pijXPc {
+                overflow: hidden;
+                border-radius: 16px;
+                background-color: #f7f8f9;
+                font-size: 18px
+            }
+
+            .OxTOff {
+                overflow: hidden;
+                border-radius: 8px;
+                background-color: #f7f8f9
+            }
+
+            .WddBJd {
+                display: block;
+                margin: 0 auto;
+                border-radius: 8px
+            }
+
+            .RJI4s {
+                vertical-align: middle
+            }
+
+            .mHhylf {
+                display: table-cell;
+                vertical-align: middle
+            }
+
+            .WZ5GJf {
+                align-items: center;
+                padding: 0 20px;
+                min-width: 112px
+            }
+
+            .qN9Ked, .DXk5Me {
+                margin: 0 auto;
+                color: #001d35
+            }
+
+            .DXk5Me {
+                cursor: pointer;
+                margin-bottom: 12px
+            }
+
+            .Dk7jOe {
+                display: block;
+                margin: 0 auto
+            }
+
+            .Qi9Fd {
+                border: 0;
+                border-radius: 999px;
+                display: block;
+                height: 56px;
+                justify-content: center;
+                width: 56px;
+                z-index: 0;
+                background: #f7f8f9;
+            }
+
+                .Qi9Fd:focus {
+                    outline: none
+                }
+
+                .Qi9Fd .hWHuJ {
+                    display: block;
+                    margin: 0 auto
+                }
+
+            .MmS8p span {
+                mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAQAAAD9CzEMAAAAXUlEQVR4Ae3NPQqAMBQE4b2WPxcTLFaPHA8QkVcbCPqKwHzbzwpAt0NWolNVNe9if/KZF5MKF1xwwUWoH+bMg5gHP7B+N6sMnF/It/IX+Tcr+ZYtMx+cmQ/uzwO4AfFiCfnWUbTrAAAAAElFTkSuQmCC)
+            }
+
+            .ji5jpf {
+                text-align: center
+            }
+
+            .K8tyEc {
+                padding-bottom: 12px
+            }
+
+            .mEUgP {
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 26px;
+                color: #1f1f1f;
+                height: 14px;
+                padding: 16px 14px 0px 14px;
+                margin: 0
+            }
+
+            .iIWm4b {
+                box-sizing: border-box;
+                min-height: 48px
+            }
+
+            .gGQDvd {
+                position: relative;
+                padding: 20px 14px 14px 14px;
+                height: 60px;
+            }
+
+            .Q71vJc {
+                display: block;
+                position: relative;
+                width: 100%
+            }
+
+            .kjGX2 {
+                position: absolute;
+                vertical-align: bottom;
+                display: inline-block;
+                right: 48px;
+                left: 0;
+                color: #4d5156;
+            }
+
+            .Xe4YD {
+                font-size: 16px
+            }
+
+            .ieB2Dd {
+                overflow: hidden;
+                margin-top: -10px;
+                margin-bottom: -16px;
+                margin-right: 8px;
+                border-radius: 4px;
+                display: inline-block;
+                border-radius: 50%;
+                padding: 8px 7px 8px 9px;
+                background-color: #f7f8f9;
+            }
+
+            .toMBf {
+                position: absolute;
+                right: 0;
+                margin-right: -8px;
+                margin-top: -2px
+            }
+
+            .OEaqif {
+                width: 20px;
+                height: 20px;
+                display: block
+            }
+
+            .x54gtf {
+                height: 1px;
+                background-color: #dadce0;
+                margin: 0 14px
+            }
+
+            .Q0HXG {
+                height: 1px;
+                background-color: #dadce0;
+            }
+
+            .rLshyf, .BmP5tf {
+                padding-top: 16px;
+                padding-bottom: 12px
+            }
+
+            .YOx3Ab {
+                padding-left: 14px;
+            }
+
+            .w1C3Le, .BmP5tf, .G5NbBd, .CS4w5b {
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+
+            .G5NbBd {
+                padding-bottom: 12px
+            }
+
+            .CS4w5b {
+                padding-top: 12px
+            }
+
+            .nMymef {
+                display: flex
+            }
+
+            .G5eFlf {
+                flex: 1;
+                display: block
+            }
+
+            .nMymef span {
+                text-align: center
+            }
+
+            .EYqSq {
+                margin: 6px 4px 9px 0;
+                border-radius: 100%;
+                display: inline-block;
+                height: 10px;
+                vertical-align: middle;
+                width: 10px
+            }
+
+            .dfB0uf {
+                color: #3c4043;
+                font-weight: bold
+            }
+
+            .IffyKc {
+                word-wrap: break-word
+            }
+        </style><div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.gov.uk/search-property-information-land-registry&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECGQQAg&amp;usg=AOvVaw3d9UAbZP2kPxZiw444KXoj" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECGQQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Search for land and property information - GOV.UK</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.gov.uk &#8250; search-property-information-land-registry</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div class="v9i61e"><div class="BNeawe s3v9rd AP7Wnd">Search for land and property information. Find ... Registering land or property with HM Land Registry ... Search for local land charges on land and property ...</div></div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="BNeawe"><a href="/url?q=https://www.gov.uk/guidance/contact-hm-land-registry&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhkEAU&amp;usg=AOvVaw1UkdiA8WkiSe8SecQA58ob" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhkEAU"><span class="XLloXe AP7Wnd">Contact HM Land Registry</span></a></span> · <span class="BNeawe"><a href="/url?q=https://www.gov.uk/search-local-land-charges&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhkEAY&amp;usg=AOvVaw3J-6GlatfCBQmZOhk30vbn" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhkEAY"><span class="XLloXe AP7Wnd">Search for local land charges</span></a></span> · <span class="BNeawe"><a href="/url?q=https://www.gov.uk/protect-land-property-from-fraud&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhkEAc&amp;usg=AOvVaw1_jl5sUFrID7bbdBiKDA9D" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhkEAc"><span class="XLloXe AP7Wnd">Fraud</span></a></span></div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.gov.uk/get-information-about-property-and-land/search-the-register&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECGAQAg&amp;usg=AOvVaw1nT-LohkhFrfXl7eScn8Ad" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECGAQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Get information about property and land: Search the register - GOV.UK</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.gov.uk &#8250; get-information-about-property-and-land</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Search the register. HM Land Registry holds records about most property or land sold in England or Wales since 1993, including the title register, title plan ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://eservices.landregistry.gov.uk/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECGMQAg&amp;usg=AOvVaw1qkYoIwLf4b5AjLsEHdB0q" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECGMQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">HM Land Registry : We guarantee the title to registered land in ...</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">eservices.landregistry.gov.uk</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Search for land and property information. HM Land ... HM Land Registry Portal Login. Required fields are ... HM Land Registry has developed a range of ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://search-property-information.service.gov.uk/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECGIQAg&amp;usg=AOvVaw1l1S7Vbp0_j_NlA4y7xBXx" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECGIQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Search by postcode - Search for land and property information</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">search-property-information.service.gov.uk</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div class="v9i61e"><div class="BNeawe s3v9rd AP7Wnd">Search by street and town · Search by map · Search by title number · Search by INSPIRE ID. Support links. Contact HM Land Registry (link opens in new tab) ...</div></div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="BNeawe"><a href="/url?q=https://search-property-information.service.gov.uk/search/map-search/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhiEAU&amp;usg=AOvVaw1vvqaBl0llWScgSSOur5BU" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhiEAU"><span class="XLloXe AP7Wnd">Search by map</span></a></span> · <span class="BNeawe"><a href="/url?q=https://search-property-information.service.gov.uk/search/search-by-title-number&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhiEAY&amp;usg=AOvVaw1Ay02oGzvbhLl90uWRD6HO" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhiEAY"><span class="XLloXe AP7Wnd">Search by title number</span></a></span> · <span class="BNeawe"><a href="/url?q=https://search-property-information.service.gov.uk/search/search-by-inspire-id&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhiEAc&amp;usg=AOvVaw2iAiRIwg65kfrOsVwlwXxi" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhiEAc"><span class="XLloXe AP7Wnd">Search by INSPIRE ID</span></a></span></div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=http://landregistry.data.gov.uk/app/ppd/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECGEQAg&amp;usg=AOvVaw1F0oTxA2hSM_VgKwpKL_Nz" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECGEQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Search the price paid dataset - HM Land Registry Open Data</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">landregistry.data.gov.uk &#8250; app &#8250; ppd</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Search the price paid dataset: Enter one or more search terms to locate the property transactions you are interested in. Building name or number.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.nidirect.gov.uk/articles/searching-land-registry&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFcQAg&amp;usg=AOvVaw1kTCN6hjgcgXyF3wAuYFmj" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFcQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Searching the Land Registry | nidirect</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.nidirect.gov.uk &#8250; articles &#8250; searching-land-registry</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Registry of Deeds. You can search ROD records from 1 January 1990 in LPS offices. The Public Record Office of Northern Ireland (PRONI) keeps all earlier records ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.iris.gov.hk/eservices/welcome.jsp%3Flanguage%3Den&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECF0QAg&amp;usg=AOvVaw3Ho2Frihg8P03YFRRC2qML" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECF0QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Welcome to the Land Registry Homepage - IRIS</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.iris.gov.hk &#8250; eservices</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">The IRIS Online Services provides an easy and convenient means to access property information in Hong Kong. View All Messages.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.landreg.gov.hk/en/services/services_b.htm&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFgQAg&amp;usg=AOvVaw3eUGIVReGB_PKiwYH4wx77" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFgQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Public Services - Search of Land Records - The Land Registry</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.landreg.gov.hk &#8250; services &#8250; services_b</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div class="v9i61e"><div class="BNeawe s3v9rd AP7Wnd"><span class="r0bn4c rQMQod">18 thg 8, 2023</span><span class="r0bn4c rQMQod"> · </span>The Land Registry - Search of Land Records. ... Information of the Land Registry's Offices Search and Registration Fees Schedule Property ...</div></div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="BNeawe"><a href="/url?q=https://www.landreg.gov.hk/en/services/services_b_2.htm&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhYEAY&amp;usg=AOvVaw2fu_SiEL_7ghiaDxabc0wL" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhYEAY"><span class="XLloXe AP7Wnd">Online Search Services (IRIS...</span></a></span> · <span class="BNeawe"><a href="/url?q=https://www.landreg.gov.hk/en/services/services_b_1.htm&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhYEAc&amp;usg=AOvVaw02QOC42Y-efzTuJYTdjWrG" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhYEAc"><span class="XLloXe AP7Wnd">Modes of Search</span></a></span> · <span class="BNeawe"><a href="/url?q=https://www.landreg.gov.hk/en/services/services_b_4.htm&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhYEAg&amp;usg=AOvVaw0RnW0PxKOllKenfiaYCJzX" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ0gJ6BAhYEAg"><span class="XLloXe AP7Wnd">Types of Land Records</span></a></span></div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://online.nswlrs.com.au/wps/portal/six/find-records/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECF4QAg&amp;usg=AOvVaw1k0U_j6tFb9Ts-v3TZ5gvi" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECF4QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Find records - NSW LRS Online</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">online.nswlrs.com.au &#8250; wps &#8250; portal &#8250; six &#8250; find-records</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Use this search to find deeds linked to a person or company such as a Power of Attorney or a deed for an Old System property. This search is only applicable ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.landdirect.ie/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECF8QAg&amp;usg=AOvVaw0NgbM7vbqVK-7nT42JGYVr" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECF8QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Direct</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.landdirect.ie</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">The official Tailte Éireann online service which allows you to search the Land Registry map and view and order title documents for more than 2.2 million ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.nswlrs.com.au/Find-Records&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFsQAg&amp;usg=AOvVaw3g4jTr7DD7j9k9wFfjXLoa" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFsQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Find Records - NSW Land Registry Services</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.nswlrs.com.au &#8250; Find-Records</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">NSW LRS provides an online search tool, the Online Portal, which offers a range of free searches to find registry information including title and street address ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.landreg.gov.hk/en/services/services_b_2.htm&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFkQAg&amp;usg=AOvVaw2HiH3oLHQ0uD3khNhtTjzh" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFkQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Search of Land Records - Online Search Services (IRIS Online ...</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.landreg.gov.hk &#8250; services &#8250; services_b_2</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="r0bn4c rQMQod">28 thg 10, 2023</span><span class="r0bn4c rQMQod"> · </span>Land records are kept by the Land Registry primarily for the purpose of facilitating property transactions. For every land transaction, ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=http://www.ontario.ca/page/search-land-property-records&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFwQAg&amp;usg=AOvVaw33O6xi4wO6OxskTX2hmNkD" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFwQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Search land property records | ontario.ca</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.ontario.ca &#8250; page &#8250; search-land-property-records</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">How to search. Online land registry services. Land registration services, including self-service options, are only accessible online. Please visit the ONLAND ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.ros.gov.uk/services/search-property-information&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFoQAg&amp;usg=AOvVaw3IIL2yHANyyvllCVSIOwUm" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFoQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Search land and property information - Registers of Scotland</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.ros.gov.uk &#8250; services &#8250; search-property-information</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">It's possible to find land and property information for registered titles by searching the land register. You can search the land register to: ... To find out ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.nidirect.gov.uk/articles/how-find-property-and-land-information&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEcQAg&amp;usg=AOvVaw3nYsN3iT3M1YPvT3nGZcHx" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEcQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">How to find property and land information | nidirect</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.nidirect.gov.uk &#8250; articles &#8250; how-find-property-and-l...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Land Registry records map-based registrations in Northern Ireland and guarantees legal title; Registry of Deeds registers documents for unregistered land ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://services.gov.im/deeds-probate-land-registry-document-search/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFYQAg&amp;usg=AOvVaw1ajSxpfTtkSWm-nZdL8Lhd" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFYQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Deeds, Probate &amp; Land Registry Document Search - Online Services</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">services.gov.im &#8250; deeds-probate-land-registry-document-s...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Deeds, Probate &amp; Land Registry Document Search. Search · Obtain Land Registry Documents · Purchased Documents · Help · Cookies · Contact · Privacy. OGL All ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.landregistry-uk.com/map-search&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEYQAg&amp;usg=AOvVaw1zVFt3IcUgiNevI94HECc8" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEYQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Map Search - Land Registry UK</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.landregistry-uk.com &#8250; map-search</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Map Search. The Map Search facility provides customers with the ability to view boundaries overlaid on Street maps and Aerial Photography, order copies of Title ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://search-property-information.service.gov.uk/search/map-search/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFUQAg&amp;usg=AOvVaw3-AYtfICVKgj34UQ1hAPYR" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFUQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Do you know some of the address? - Land Registry - GOV.UK</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">search-property-information.service.gov.uk &#8250; map-search</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Search for land and property information. beta This is a new service &#8211; give ... Search by postcode · Search by street and town · Search by title number · Search ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.landregistryservices.com/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFMQAg&amp;usg=AOvVaw2jS1baxo0-BiXA-tYbYFUB" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFMQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry Title Registers, Title Plans and Conveyancing Searches</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.landregistryservices.com</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Land Registry Title Documents Online. Land Registry searches are the main source of information relating to home and land ownership, mortgages, charges, ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://hmlandregistry.blog.gov.uk/2021/01/26/who-owns-that-property/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFQQAg&amp;usg=AOvVaw2ZUaNXVh1qiM9SwPQSwjAo" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFQQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Who owns that property? - HM Land Registry - GOV.UK blogs</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">hmlandregistry.blog.gov.uk &#8250; 2021/01/26 &#8250; who-owns-th...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="r0bn4c rQMQod">26 thg 1, 2021</span><span class="r0bn4c rQMQod"> · </span>Property ownership details will be added to Search for land and property information, for purchase, in March 2021 and it can currently be used ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.gov.im/landregistry&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFIQAg&amp;usg=AOvVaw2TalntvWjiwGPr6Yf3ODDU" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFIQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry - Isle of Man Government</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.gov.im &#8250; landregistry</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">To find out the registry fees and duty payable for property transactions: Online fees calculator - from 1 May 2023. Land Registry. Registries Building.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.landregistryireland.com/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFEQAg&amp;usg=AOvVaw1H-rFcN06DcOns0-tlKczQ" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFEQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry Ireland</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.landregistryireland.com</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Access Land Registry Data and Folio Information find out information, such as: Land Registry Folio (ownership, covenants). Check the status of your own land,.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://onlinelandregistry.org.uk/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFAQAg&amp;usg=AOvVaw36shqM7RBd7N3EtCR5NnAL" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECFAQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Online Land Registry</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">onlinelandregistry.org.uk</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">... property professionals with access to copies of Land Registry documents. START SEARCH. You can search for any property deeds - you do not need to own the ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.landregistry-uk.com/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECE8QAg&amp;usg=AOvVaw3vpH9FVlv61tb8zT3iMI0p" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECE8QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry UK</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.landregistry-uk.com</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Land Registry Title Deeds, Maps and Documents for the UK · Land Registry searches are the main source of information relating to home and land ownership such as:.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://bhumijankari.bihar.gov.in/biharportal/Admin/AdvSearch/AdvSearch.aspx&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECE0QAg&amp;usg=AOvVaw0Pvs-KKsExMy677UUngTAW" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECE0QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Advance Search - Property Registration Details of Bihar</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">bhumijankari.bihar.gov.in &#8250; AdvSearch &#8250; AdvSearch</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">For Quick Search Please Select Registration Office and From/To Registration Date. Online Registration (2016 To Till Date), Post Computerisation (2006 To ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://scotlis.ros.gov.uk/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECE4QAg&amp;usg=AOvVaw19noE_2iQjDB5jQAOIT8nA" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECE4QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">ScotLIS - Registers of Scotland</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">scotlis.ros.gov.uk</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Scotland's Land Information Service · Find property owners · Search for property prices · Buy property documents · Check if a property is on the land register ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://novascotia.ca/sns/access/land/land-services-information/land-registry.asp&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEoQAg&amp;usg=AOvVaw2y11rp610KTtQSm-prX9sv" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEoQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Nova Scotia Land Registry | Access Nova Scotia | Government of NS</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">novascotia.ca &#8250; access &#8250; land &#8250; land-services-information</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Search. Access Nova Scotia · Government of NS &gt; Service NS &gt; Access NS &gt; Maps, Land &amp; Property &gt; Land Services &amp; Information &gt; Nova Scotia Land Registry. Text ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://hmlandregistry.blog.gov.uk/2018/03/05/find-property-information-the-easy-way/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEwQAg&amp;usg=AOvVaw2MwAkjykHL36KnopTBBO2c" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEwQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Find property information: the easy way - HM Land Registry</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">hmlandregistry.blog.gov.uk &#8250; 2018/03/05 &#8250; find-property...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="r0bn4c rQMQod">5 thg 3, 2018</span><span class="r0bn4c rQMQod"> · </span>The information is in the public domain but the actual register/title plan is only available via a statutory service. As a result you have to ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.localconveyancingdirect.co.uk/what-are-land-registry-searches-and-why-are-they-important&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEsQAg&amp;usg=AOvVaw2YC1X6WjNOjZHnWTQ12QyG" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEsQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">What are Land Registry searches and why are they important?</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.localconveyancingdirect.co.uk &#8250; what-are-land-regis...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Conducting a search of the register identifies the true owner of the piece of land or property you are hoping to buy.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.landregistryonline.org.uk/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEkQAg&amp;usg=AOvVaw3masRqLWH3BEYLIpa5E0PJ" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEkQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry Online | Land Registry Search | Quick &amp; Easy</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.landregistryonline.org.uk</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Land Registry Documents Online · Obtain Title Register, Title Plans, Owners details and more for any property in England &amp; Wales · &#8211; Quick &amp; Easy · &#8211; Fast ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://propertychecker.co.uk/land-registry/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEgQAg&amp;usg=AOvVaw2Bk8-UqCVN63Uh4z4LV-jY" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEgQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Search Land Registry - Property Checker</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">propertychecker.co.uk &#8250; land-registry</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Enter a postcode to search land registry records. Use this service to find land registry information for a property.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://landregistryservice.co.uk/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEUQAg&amp;usg=AOvVaw1pdEjgG_dgoJ-DxZw6jKA8" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEUQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry Online | Land Registry UK Title Deeds</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">landregistryservice.co.uk</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Land Registry online search. Title deeds for the whole UK. Title Register, Plan, Registered Lease. Property ownership search. Boundary dispute.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://eregulations.invest.go.ke/procedure/239/102%3Fl%3Den&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCIQAg&amp;usg=AOvVaw1k2nyPfpbzfRTQ-bTzWUZK" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCIQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land search (online) - eRegulations Kenya</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">eregulations.invest.go.ke &#8250; procedure</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Transfer of land (Kisumu registry). Transfer of land (Mombasa registry) ... Land search (online); Land and property · Land search. Contact us about this procedure ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www2.snb.ca/content/snb/en/sites/land-registry.html&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCsQAg&amp;usg=AOvVaw06Id6yfGlcWqRRxjp41Ne6" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCsQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry - SNB.CA</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www2.snb.ca &#8250; content &#8250; snb &#8250; sites &#8250; land-registry</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Info concerning land registration, real property, surveys, property mapping, condominiums and more in N.B..</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.sla.gov.sg/regulatory/property-ownership/land-titles-search&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEMQAg&amp;usg=AOvVaw3-J4jgjhCVLwsLEdZ_iLKk" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEMQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Titles Search - Singapore Land Authority</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.sla.gov.sg &#8250; regulatory &#8250; property-ownership &#8250; land...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">The Registry's records are based on the Survey District and lot numbers for the land parcel e.g. MK18 Lot 99279M. INFORMATION YOU NEED TO MAKE A SEARCH. To make ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://landsbureau.lagosstate.gov.ng/directorate-of-land-registry/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEIQAg&amp;usg=AOvVaw13exW_a6Z0gcMoZdxe4XVM" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEIQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Directorate of Land Registry &#8211; Lands Bureau &#8211; Lagos State ...</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">landsbureau.lagosstate.gov.ng &#8250; directorate-of-land-registry</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Registration of Deed/Assent/Vesting Deed, Court Judgment, Deed of Release, issuance of loss of documents, Certified True Copy (CTC), and conducting search.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://help.onland.ca/en/property-search/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEQQAg&amp;usg=AOvVaw0OVJ7KeSI5oh-IMzyvm-1W" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEQQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Property Search - OnLand Help Centre</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">help.onland.ca &#8250; property-search</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="r0bn4c rQMQod">9 thg 1, 2024</span><span class="r0bn4c rQMQod"> · </span>From the Find your land registry service options, select Property. Select the Address option. Enter the address details. In the Requested By ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.tailte.ie/en/registration/registry-of-deeds/registry-of-deeds-services/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEEQAg&amp;usg=AOvVaw3IUZZMZGJVmK-zGiFcUA9-" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEEQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Registry of Deeds Services - Tailte Éireann</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.tailte.ie &#8250; registration &#8250; registry-of-deeds-services</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">The fee for a public search is &#8364;2 per name, for each specified lands or premises, for each period of ten years or part thereof. You must know the name of the ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.rgd.gov.lk/web/index.php%3Foption%3Dcom_land%26view%3Dsearch_land_registries%26search_by_module%3Dtrue%26Itemid%3D256%26lang%3Den&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEAQAg&amp;usg=AOvVaw0eK74S4sOcIWbOD9aaj0e1" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECEAQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Find Land Registry Information - rgd.gov.lk</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.rgd.gov.lk &#8250; web &#8250; search_by_module=true</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Vision. Assist the public to secure their rights by registration. Mission. Our mission is the registration of legal ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://propertyregistry.co.uk/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECD8QAg&amp;usg=AOvVaw36XCvmX-5JgNysd9zZzn6-" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECD8QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Find Owner of Property - Property Ownership Search UK &amp; Wales ...</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">propertyregistry.co.uk</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Property Registry UK is the leading provider of title deeds and property ownership records in the United Kingdom. Search for any piece of real estate by ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=http://www.ontario.ca/search/land-registration&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECD4QAg&amp;usg=AOvVaw312Qw_68uaLFtZSvQeUhQe" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECD4QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Search land registration documents | ontario.ca</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.ontario.ca &#8250; search &#8250; land-registration</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Search a range of government documents, from technical bulletins to minister's orders, regarding land registration. Online land registry ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.land.vic.gov.au/land-registration/for-individuals/where-to-find-information-about-land-titles&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDwQAg&amp;usg=AOvVaw0q2ghey5cRO3Y5GwML576q" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDwQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Where to find information about land titles - Land.Vic</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.land.vic.gov.au &#8250; Land registration &#8250; For individuals</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">A title search shows the information held in the Victorian Register of land at the time the search is made. This includes registered proprietors' names and ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.masslandrecords.com/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECD0QAg&amp;usg=AOvVaw1H8UmOUOdTm2sp1DMNxhXU" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECD0QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Massachusetts Land Records</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.masslandrecords.com</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Search the Corporate Database · State House Tours ... Massachusetts Land Records ... If you have questions about particular documents or Registry policies, contact ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.alberta.ca/find-land-titles-documents-plans&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDoQAg&amp;usg=AOvVaw0IXhktzXUGeVIS2XISiQBD" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDoQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Find land titles, documents or plans | Alberta.ca</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.alberta.ca &#8250; find-land-titles-documents-plans</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">legal description; land identification number code (LINC number); title number. 2. Search. Title searches are available through SPIN2 or through a registry ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.landregistry-online.org/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDsQAg&amp;usg=AOvVaw2a06K4DSRSdEwZOw9U3S6U" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDsQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry Search Made Easy By Land Registry Online</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.landregistry-online.org</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Simplify Land Registry searches with our online platform. Access accurate and efficient results for hassle-free property information.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.infotrack.co.uk/solutions/conveyancing/land-registry-searches/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDgQAg&amp;usg=AOvVaw2Bj4VJhZT3ianv6bGw3JNV" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDgQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Search HM Land Registry online with ease through InfoTrack</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.infotrack.co.uk &#8250; solutions &#8250; conveyancing &#8250; land-r...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Access intelligent data in four hours of instruction for large commercial property transactions with our Land Registry Extract service. A free-to-use service, ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://avrillo.co.uk/land-registry-search-video/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDkQAg&amp;usg=AOvVaw30ZOFM3beG6zgEkpPPE10h" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDkQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry Search: A Comprehensive Guide - AVRillo</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">avrillo.co.uk &#8250; land-registry-search-video</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">How can I conduct a land registry search to find information about property and land? To conduct a land registry search, you can access the HM Land Registry ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://eportugal.gov.pt/en/servicos/pedir-uma-certidao-permanente-do-registo-predial&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDcQAg&amp;usg=AOvVaw1r7A7X76wBZik74YO_v5Ki" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDcQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Request a permanent certificate of land registry - ePortugal</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">eportugal.gov.pt &#8250; servicos &#8250; pedir-uma-certidao-permane...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">You may find these data in contracts regarding the property (for instance the purchase and sale deed or the constitution of a mortgage) or in previously ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://landregistryservices.co.uk/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDYQAg&amp;usg=AOvVaw1_NG39k9IUdOVCUsC5A3zY" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDYQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry Services - Home</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">landregistryservices.co.uk</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Our Land Registry Online search service covers properties in England, Wales, Scotland and Northern Ireland. We have instant access to the Land Registers for ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.insolvencydirect.bis.gov.uk/freedomofinformationtechnical/technicalmanual/ch49-60/chapter%252050/part5/part_5.htm&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDUQAg&amp;usg=AOvVaw24O4iipW_OLDFtviGiyroN" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDUQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Part 5 Searches of HM Land Registry records - The Insolvency Service</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.insolvencydirect.bis.gov.uk &#8250; technicalmanual &#8250; part...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Whenever the official receiver requests a search of the Index of Proprietors' Names and/or the inspection of documents he/she should use HM Land Registry Form ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.globalx.co/conveyancing-searches/land-registry-searches/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDQQAg&amp;usg=AOvVaw1DSSjJmtD1SI51mzerx28v" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDQQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry Searches &amp; Documents - GlobalX</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.globalx.co &#8250; conveyancing-searches &#8250; land-registry-...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Land registry searches from GlobalX. Fast turnaround times and competitive prices. Searches for properties and/or land within England and Wales.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.landregistrysearches.com/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDMQAg&amp;usg=AOvVaw0RMoOnYCeWyBUCrehSIVM6" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDMQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry Searches Online - Obtain Land Registry Title Deeds</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.landregistrysearches.com</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">LandRegistrySearches.com - Specialising in the provision of property data, conveyancing documents and searches. LandRegistrySearches.com is not affiliated in ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.finance-ni.gov.uk/articles/land-registry-searches-folio-map-priority&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDIQAg&amp;usg=AOvVaw0JFMGN9DqTeRQTAWXQhGBu" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDIQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry searches - folio, map, priority | Department of Finance</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.finance-ni.gov.uk &#8250; articles &#8250; land-registry-searches-...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Searches in the registry map (Rule 186) · whether the land searched against is registered land and, if so, the relevant folio number or · in the case of ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.gov.cy/en/digital-services/property-and-taxation/ownership-and-property/search-certificate-of-immovable-property-for-a-property-of-a-specific-owner-with-or-without-encumbrances-and-prohibitions&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDEQAg&amp;usg=AOvVaw02Uyf3nQm8-iOhUSWkzrAD" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDEQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Search certificate of immovable property for a property of a specific ...</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.gov.cy &#8250; digital-services &#8250; ownership-and-property</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Use this application to submit an application for a search certificate for a property of a specific owner with (or without) encumbrances.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.landata.online/products/title-search/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDAQAg&amp;usg=AOvVaw2tlQbNoZLNVXjlBgJjz0YQ" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECDAQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Title Search - Landata</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.landata.online &#8250; products &#8250; title-search</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">The information is public and registered within the Victorian Land Registry. Searching for a Register Search Statement (Copy of Title). Simply begin your ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://landregistryplans.gov.mt/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECC0QAg&amp;usg=AOvVaw3seus9d705PoUuSbJoDUqc" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECC0QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">landregistryplans.gov.mt</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Online Sale of Land Registry Site Plans - Land Registry Malta, Identity Malta Agency.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.gov.il/en/service/land_registration_extract&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCwQAg&amp;usg=AOvVaw37FTZl0ZT4TiNPTYzk57AZ" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCwQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Produce a land registry extract (Tabu) - Gov.il</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.gov.il &#8250; service &#8250; land_registration_extract</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Search here or by chat... You might be interested ... Land owners' rights are registered in the land registry deed (Tabu). ... Is the land registered in the land ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.api.gov.uk/hmlr/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECC4QAg&amp;usg=AOvVaw2AvonZRsl_5Zz_1ditIpvk" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECC4QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">HM Land Registry - GOV.UK API catalogue</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.api.gov.uk &#8250; hmlr</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">HM Land Registry. The API catalogue contains the following 11 HM Land Registry (HMLR) APIs: ... Local Land Charges Search · Official Copy Document Availability ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.lps.gi/land-registry-dept&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECC8QAg&amp;usg=AOvVaw1wdfCNhb6yAXIh4NHEQo87" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECC8QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry - Gibraltar - Land Property Services</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.lps.gi &#8250; land-registry-dept</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">The Land Registry's "Web Portal" is a service that is offered, for a fee, to property professionals in order to carry out Title searches.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://landregistry-deeds.co.uk/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCoQAg&amp;usg=AOvVaw1gEVRqzERUwzaow2HFzwKR" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCoQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry Deeds | Title Deeds and Documents &#8211; Land Registry ...</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">landregistry-deeds.co.uk</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="r0bn4c rQMQod">22 thg 10, 2023</span><span class="r0bn4c rQMQod"> · </span>Land Registry Searches. Simple. Fast. Secure Land Registry documents supplied within the hour. Quick &amp; easy ordering.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://propertyregistry.co.uk/land-registry-search/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCkQAg&amp;usg=AOvVaw15RL06aRZlviYhZg-qz0OM" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCkQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Search HM Land Registry Portal</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">propertyregistry.co.uk &#8250; land-registry-search</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Land Registry Searches Title Number. To search by title number, firstly click the &#8220;Search By&#8221; button on the form above and change the search by to &#8220;Title Number ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://ltsa.ca/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCgQAg&amp;usg=AOvVaw3BFYWBjoROxDREBFinh7_d" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCgQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">LTSA: Home</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">ltsa.ca</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Order a current land title or plan with myLTSA &#8211; LTSA's online service for search, filing, and more. Register Now. 1 / 3. Need to change your address?</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://yukon.ca/en/legal-and-social-supports/learn-how-access-yukon-land-titles-registry-online&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCcQAg&amp;usg=AOvVaw3nfHaKe6jmLIzzaJhrdPqe" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCcQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Learn how to access the Yukon Land Titles Registry online</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">yukon.ca &#8250; legal-and-social-supports &#8250; learn-how-access-y...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">The Land Titles Office (LTO) offers an online portal for searching, viewing and downloading Certificates of Title, Registered Instruments, Registered Survey ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.dnsassociates.co.uk/hm-land-registry&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCQQAg&amp;usg=AOvVaw2Kj3nOcLG7Y493_L7Gh7ae" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCQQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">HM Land Registry - Property Search, House Prices &amp; Fees</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.dnsassociates.co.uk &#8250; hm-land-registry</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">For the first time registration of your land, you would have to submit First Registration form and prepare an outline of your land as per deeds of the document.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.cadastre.ch/en/gb.html&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCYQAg&amp;usg=AOvVaw339P9M5iwebzL_hWjBFZKx" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCYQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Swiss Land Registry - Cadastre.ch</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.cadastre.ch &#8250; ...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Find publications available in English about the Swiss cadastral surveying and the Cadastre of Public-law Restrictions on landownership and the land register.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.tailte.ie/en/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCUQAg&amp;usg=AOvVaw3y_yifFTbZWZmnF_Ai0kPo" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCUQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Tailte Éireann: Home</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.tailte.ie &#8250; ...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Land and Property Maps &amp; Data ... Search. Search. Home. Tailte Éireann. Welcome to ... Information and guidance on the Land Registry, the Registry of Deeds and ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.bcregistry.gov.bc.ca/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCMQAg&amp;usg=AOvVaw1B0ubp_NiUysa-fcI931X7" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCMQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">BC Registries and Online Services</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.bcregistry.gov.bc.ca</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Search property tax records for rural properties in B.C. Rural Property Tax Search has been moved to the BC Registries account. Site Registry. Search for ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad xpd EtOod pkphOe"><div class="kCrYT"><span class="cAuxJf"><div class="BNeawe"><span class="BNeawe"><a href="http://www.google.com/search?num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;ei=TLosZv3cIZGo1e8Pq5WbyAE&amp;q=land+registry+search&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQsAR6BAgAEAE" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQsAR6BAgAEAE"><span><span class="FCUp0c rQMQod">Hình &#7843;nh</span></span></a></span></div></span><div class="BNeawe tAd8D AP7Wnd"><span class="BNeawe"><a href="http://www.google.com/search?num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;ei=TLosZv3cIZGo1e8Pq5WbyAE&amp;q=land+registry+search&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ7Al6BAgAEAI" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ7Al6BAgAEAI"><span class="tAd8D AP7Wnd"><span class="rQMQod Xb5VRe">Xem t&#7845;t c&#7843;</span></span></a></span></div></div><div><div><div><div class="Xdlr0d"><div class="idg8be"><a class="BVG0Nb OxTOff" href="https://www.google.com/imgres?imgurl=https://hmlandregistry.blog.gov.uk/wp-content/uploads/sites/207/2021/01/Search-for-land-and-property-information-image3.blog_.png&amp;imgrefurl=https://hmlandregistry.blog.gov.uk/2021/01/26/who-owns-that-property/&amp;h=2667&amp;w=4000&amp;tbnid=LitEwKhZe_i4SM&amp;q=land+registry+search&amp;tbnh=100&amp;tbnw=150&amp;usg=AI4_-kRFvXGCruDZR_P6EnjQvEvkBAKrkA&amp;vet=1&amp;docid=YrsjWrF7n0Nu2M&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ9QF6BAgAEAQ" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ9QF6BAgAEAQ"><div><img class="WddBJd" style="max-width:none;height:128px;max-height:128px" alt="Who owns that property? &#8211; HM Land Registry" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="dimg_3" data-deferred="1"></div></a><a class="BVG0Nb OxTOff" href="https://www.google.com/imgres?imgurl=https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/66260/SearchScreenHome-portal-10Aug.png&amp;imgrefurl=https://www.gov.uk/guidance/land-registry-portal-make-an-application-enquiry&amp;h=640&amp;w=960&amp;tbnid=AMqqcDeqJR-5DM&amp;q=land+registry+search&amp;tbnh=99&amp;tbnw=148&amp;usg=AI4_-kROeahR125fvroOGL2TGZ88qE56IQ&amp;vet=1&amp;docid=0x8rMMtq_mnMLM&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ9QF6BAgAEAY" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ9QF6BAgAEAY"><div><img class="WddBJd" style="max-width:none;height:128px;max-height:128px" alt="HM Land Registry portal: make an application enquiry - GOV.UK" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="dimg_7" data-deferred="1"></div></a><a class="BVG0Nb OxTOff" href="https://www.google.com/imgres?imgurl=https://www.landregistryservices.com/images/title-plan.png&amp;imgrefurl=https://www.landregistryservices.com/&amp;h=282&amp;w=200&amp;tbnid=WlowDJIMFjXvbM&amp;q=land+registry+search&amp;tbnh=114&amp;tbnw=81&amp;usg=AI4_-kS81lxJOwiPQ5uaztMgLZ-m6w5vow&amp;vet=1&amp;docid=K_GXRuvQDXpbHM&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ9QF6BAgAEAg" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ9QF6BAgAEAg"><div><img class="WddBJd" style="max-width:none;height:128px;max-height:128px" alt="Land Registry Title Registers, Title Plans and Conveyancing Searches" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="dimg_13" data-deferred="1"></div></a><a class="BVG0Nb OxTOff" href="https://www.google.com/imgres?imgurl=https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/44884/official-copies-1.png&amp;imgrefurl=https://www.gov.uk/guidance/land-registry-portal-how-to-request-official-copies&amp;h=640&amp;w=960&amp;tbnid=Z2AjpYUZ-DE47M&amp;q=land+registry+search&amp;tbnh=99&amp;tbnw=148&amp;usg=AI4_-kQhHENw4jm997psMaVS3R4yktK83g&amp;vet=1&amp;docid=lGNLgeLbr7-ThM&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ9QF6BAgAEAo" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ9QF6BAgAEAo"><div><img class="WddBJd" style="max-width:none;height:128px;max-height:128px" alt="HM Land Registry portal: how to request official copies - GOV.UK" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="dimg_17" data-deferred="1"></div></a><a class="BVG0Nb OxTOff" href="https://www.google.com/imgres?imgurl=https://i.ytimg.com/vi/gdYr4Xz7IMo/maxresdefault.jpg&amp;imgrefurl=https://www.youtube.com/watch?v%3DgdYr4Xz7IMo&amp;h=720&amp;w=1280&amp;tbnid=zOEq_fNjH0MLPM&amp;q=land+registry+search&amp;tbnh=84&amp;tbnw=150&amp;usg=AI4_-kQL3OuMRwpp-ExM8u_bUGJQk9tKaw&amp;vet=1&amp;docid=4kGyVovng2lZmM&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ9QF6BAgAEAw" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ9QF6BAgAEAw"><div><img class="WddBJd" style="max-width:none;height:128px;max-height:128px" alt="How to verify your title deed at UK land Registry? - YouTube" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="dimg_21" data-deferred="1"></div></a><a class="BVG0Nb OxTOff" href="https://www.google.com/imgres?imgurl=https://www.landregistryservices.com/images/resources/find-land-registry-title-number.png&amp;imgrefurl=https://www.landregistryservices.com/information/how-to-find-land-registry-title-number/&amp;h=768&amp;w=1024&amp;tbnid=vsJt8gFtgCNTfM&amp;q=land+registry+search&amp;tbnh=113&amp;tbnw=150&amp;usg=AI4_-kRIL1PetbxNFTVBK5FOR7lCV2Rliw&amp;vet=1&amp;docid=J6tD8o_-81sZ_M&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ9QF6BAgAEA4" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ9QF6BAgAEA4"><div><img class="WddBJd" style="max-width:none;height:128px;max-height:128px" alt="How to find the Land Registry Title Number" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" id="dimg_27" data-deferred="1"></div></a><div class="mHhylf"><div class="WZ5GJf"><a class="qN9Ked" href="http://www.google.com/search?num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;ei=TLosZv3cIZGo1e8Pq5WbyAE&amp;q=land+registry+search&amp;tbm=isch&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ7Al6BAgAEA8" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ7Al6BAgAEA8"><button class="DXk5Me Qi9Fd" tabindex="-1"><span class="hWHuJ"><span class="Dk7jOe WqQeqc MmS8p"><span></span></span></span></button><div class="BNeawe ji5jpf s3v9rd AP7Wnd">Xem t&#7845;t c&#7843;</div></a></div></div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://sede.registradores.org/contenido/buyingahouse/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCEQAg&amp;usg=AOvVaw1rTbbYrDdPo0n1MhAgBjy4" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCEQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Welcome to Registradores de España - Tradis</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">sede.registradores.org &#8250; contenido &#8250; buyingahouse</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Real Estate is identified in the Land Registry Offices of Spain, by means of the name of the Municipality, the Land Registry Office and Registry Section and the ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.cyprus.gov.cy/portal/portal.nsf/gwp.getGroup%3FOpenForm%26access%3D0%26SectionId%3Dcitizen%26CategoryId%3DLand%2520and%2520Property%26SelectionId%3DLand%2520Owner%26print%3D0%26lang%3Den&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCAQAg&amp;usg=AOvVaw1a-I5VX5v3IEPLX7kNR2S3" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECCAQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">WEB PORTAL OF THE REPUBLIC OF CYPRUS - Land Owner</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.cyprus.gov.cy &#8250; portal &#8250; portal.nsf &#8250; gwp.getGroup</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Search Search. Thursday, 25 April 2024. Other Related. [ARTICLE 38&#922;&#920;] - Calling of a general assembly of a common building (in Greek only) · Planning Amnesty ( ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://e-justice.europa.eu/109/EN/land_registers_in_eu_countries%3FITALY%26member%3D1&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECB8QAg&amp;usg=AOvVaw35r8VZxl0m8lNB_OZ4lsUJ" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECB8QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">European e-Justice Portal - Land registers in EU countries</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">e-justice.europa.eu &#8250; land_registers_in_eu_countries &#8250; IT...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="r0bn4c rQMQod">31 thg 10, 2023</span><span class="r0bn4c rQMQod"> · </span>You can search for information by person, by estate or by deed. History of the Italian land register. Computerisation of the registered ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://wbregistration.gov.in/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECB0QAg&amp;usg=AOvVaw2d2mkG8UfnlNO9QF8q1KRh" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECB0QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">wbregistration</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">wbregistration.gov.in</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">To know the details Click Here. "Search by Deed no And Query no" is now available under "Search ... Calculator. Arrow Market Value of Land · Arrow Market Value of ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.gov.hk/en/residents/housing/private/landrecords/searchlandrecord.htm&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECB4QAg&amp;usg=AOvVaw0ReTYnW_D9S6Fx1ruDGowA" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECB4QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Search of Land Records - GovHK</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.gov.hk &#8250; private &#8250; landrecords &#8250; searchlandrecord</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">The required information can be obtained by conducting land searches. Modes of Search. Searches of land registers can be conducted through counter search and ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.gov.je/Home/RentingBuying/BuyersGuide/pages/recskeptpubreg.aspx&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBwQAg&amp;usg=AOvVaw0dywEp_43wciRaKSu9xtqZ" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBwQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Public Registry records - Government of Jersey</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.gov.je &#8250; BuyersGuide &#8250; pages &#8250; recskeptpubreg</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Deeds of property date back as far as 1602. Books prior to 1800 are now held at the Jersey Archive Centre. Records from 1800 onwards can be found by searching ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://myhomemoveconveyancing.co.uk/buyers/searches-and-surveys/land-registry-searches/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBsQAg&amp;usg=AOvVaw3npbB1vXGzmyIwrL1Uozod" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBsQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">What are Land Registry searches? - My Home Move Conveyancing</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">myhomemoveconveyancing.co.uk &#8250; searches-and-surveys</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Conveyancing searches, also known as property searches, are enquiries made by your conveyancer when buying a house, find out more.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.titlesqld.com.au/title-searches/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBoQAg&amp;usg=AOvVaw1WjBP_p0I1cO5RtTRpfM0l" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBoQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Searches - Titles Queensland</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.titlesqld.com.au &#8250; title-searches</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">... search from Titles Queensland. ... registry prior to the introduction of the ... Obtain environmental property searches for coastal development tidal works, ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://landregistry.data.gov.uk/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBkQAg&amp;usg=AOvVaw3uy4rZoGN8k4f_q8-6oipx" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBkQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">HM Land Registry Open Data</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">landregistry.data.gov.uk</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Price Paid Data and House Price Index customers who do not require the full dataset can run bespoke reports with the following tools: Search the UK house price ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.citizensinformation.ie/en/housing/owning-a-home/buying-a-home/property-deeds/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBgQAg&amp;usg=AOvVaw3_ZJUbXikjoqhbxwUj9gu4" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBgQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Property deeds - Citizens Information</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.citizensinformation.ie &#8250; housing &#8250; buying-a-home</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="r0bn4c rQMQod">16 thg 5, 2023</span><span class="r0bn4c rQMQod"> · </span>When title or ownership of property is registered with the Land Registry, the Land ... find out who owns a property, without having to read the ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.iris.gov.hk/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBcQAg&amp;usg=AOvVaw2D-Bm0njDjNf3II1GJejxM" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBcQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Integrated Registration Information System Online Services</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.iris.gov.hk</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">The Land Registry. &#32321; · Desktop Version. ***Friendly Reminders: * Max. no. of ... Search Land Register · Search PRN · Search Unposted Memorial List/ Information ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.stoke.gov.uk/info/20091/local_searches_and_land_charges&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBQQAg&amp;usg=AOvVaw3lYxqC0ikhJPMraz_YHj95" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBQQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Local searches and land charges - Stoke-on-Trent</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.stoke.gov.uk &#8250; info &#8250; local_searches_and_land_char...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Local searches and land charges. Types of local searches and land charges · Local search portal · Law Society · HM Land Registry · Apply for a local search ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.buckinghamshire.gov.uk/planning-and-building-control/request-a-search-on-a-property-or-land/make-an-official-search/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBUQAg&amp;usg=AOvVaw24-Zjq6vLG4ALd3cSq94lo" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBUQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">How to make an official search | Buckinghamshire Council</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.buckinghamshire.gov.uk &#8250; make-an-official-search</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Local Land Charges Institute · HM Land Registry. Make a highways extent search. See if a maintainable highway affects your property by making a search for a ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.severntrentsearches.com/residential-conveyancing-searches/chancel-and-title-check-reports/land-registry-search/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBYQAg&amp;usg=AOvVaw2p3O9xjVwjc-oWr7-xKctW" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBYQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry Search - Severn Trent Searches</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.severntrentsearches.com &#8250; land-registry-search</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">£8.40 · Title plan, showing location and boundaries of the property · Copy of the register, showing current ownership, deeds of grant, wayleaves, rights of way, ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.linz.govt.nz/products-services/land-records/land-record-search&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBIQAg&amp;usg=AOvVaw2iggPFH8PpZj6ViP3Ws7Z7" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBIQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Record Search | Toit&#363; Te Whenua</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.linz.govt.nz &#8250; Products and services &#8250; Land records</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="r0bn4c rQMQod">21 thg 2, 2024</span><span class="r0bn4c rQMQod"> · </span>Land Record Search allows you to search for and buy property records such as a title (previously called certificates of title or computer ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.sec.state.ma.us/divisions/registry-of-deeds/registry-of-deeds.htm&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBMQAg&amp;usg=AOvVaw0irmT1DqCzLNAlkGMGHS0q" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBMQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Registry of Deeds - Secretary of the Commonwealth of Massachusetts</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.sec.state.ma.us &#8250; divisions &#8250; registry-of-deeds</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Land Records. Search Massachusetts Property Records · Locate a Registry of Deeds Office · Refinancing Information. Refinancing FAQs · Homestead Protections.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.warwickdc.gov.uk/info/20379/land_searches/540/land_registry&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBEQAg&amp;usg=AOvVaw0O_DDSxU9tOfGbYeSkGFl0" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBEQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land registry - Warwick District Council</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.warwickdc.gov.uk &#8250; info &#8250; land_searches &#8250; land_re...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Search this site. Search. Land registry. Home · Planning · Land searches; Land registry. Land registry enquiries should be sent to the land registry. Contact ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://landregistry.gov.gy/services/official-title-search-without-certificate/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBAQAg&amp;usg=AOvVaw2H17tWukroeoDj_2a8KpVy" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECBAQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Official Title Search (without Certificate) - Land Registry</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">landregistry.gov.gy &#8250; Services</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="r0bn4c rQMQod">4 thg 6, 2018</span><span class="r0bn4c rQMQod"> · </span>What documents do I need? · Completed Application Form · Original and certified copy of National ID. Duration.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.finance-ni.gov.uk/topics/land-registration/registry-deeds&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAsQAg&amp;usg=AOvVaw1mdxttmUaYxKQiAsd2BGjJ" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAsQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Registry of Deeds | Department of Finance</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.finance-ni.gov.uk &#8250; topics &#8250; land-registration &#8250; regis...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Land registration. Find out about the Registry of Deeds, how to search the Registry and the forms required to register ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.stevenage.gov.uk/about-the-council/local-land-searches/local-land-charges-search&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAwQAg&amp;usg=AOvVaw0w3jbThmPxC8bzIE0mevao" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAwQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Local Land Charges Search - Stevenage Borough Council</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.stevenage.gov.uk &#8250; about-the-council &#8250; local-land-c...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="r0bn4c rQMQod">31 thg 3, 2024</span><span class="r0bn4c rQMQod"> · </span>Local Land Charges Search. Posted on 31 Mar ... searches covered by the Local Land charges Act ... Land Registry deal with ownership of property.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.searchesuk.co.uk/landregistry-searches/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECA0QAg&amp;usg=AOvVaw0JGZYudEiVdsJM3x1O0hYz" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECA0QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Registry Searches - Searches UK</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.searchesuk.co.uk &#8250; landregistry-searches</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="r0bn4c rQMQod">10 thg 1, 2019</span><span class="r0bn4c rQMQod"> · </span>Land Registry Searches. The Land Registry currently holds the records on more than 24 million titles or evidence of property ownership in ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.landregistryireland.com/map-search_1&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECA4QAg&amp;usg=AOvVaw1wGU1oiKu8NCMZqVhySbap" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECA4QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Map Search - LandRegistryIreland.com</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.landregistryireland.com &#8250; map-search_1</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Search this site. Skip to main content. Skip to navigation. LandRegistryIreland.com · Home · Map Search · Order Now · Contact Form.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.uslandrecords.com/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAoQAg&amp;usg=AOvVaw0SIm6ci7-ALtBQfnZ3Py8k" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAoQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Welcome to US Land Records</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.uslandrecords.com</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Welcome to USLandRecords Real Property Official Records Search. To begin, select your state from the map or from the list above. Welcome LandAccess.com ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://novascotia.ca/sns/access/land/property-online.asp&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAkQAg&amp;usg=AOvVaw3bpycXSNyvBGbnYPZyeLEA" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAkQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Property Online - Access NS - Government of Nova Scotia</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">novascotia.ca &#8250; sns &#8250; access &#8250; land &#8250; property-online</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">... Land &amp; Property &gt; Property Online. Text Size: A+ A-. Drivers ... E-Land Registry. ans-vstat-stats-reports-sm ... Any Questions? Office Locations · News · Search ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.masslandrecords.com/MiddlesexSouth/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAcQAg&amp;usg=AOvVaw2ijngUS7hmLWuk64pVFoxk" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAcQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Middlesex South - Massachusetts Land Records</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.masslandrecords.com &#8250; MiddlesexSouth</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">This means that documents before this date may not be listed if you search by Name or Property Address. ... Select Another Registry, |, Contact Us, |, Refinance ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=http://help.landwebni.gov.uk/landregistry/searching/ownername&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAMQAg&amp;usg=AOvVaw301qLrMCZ-DwWjGAGdYx2R" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAMQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Search using owner name - Welcome to Prelive Portal Help</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">help.landwebni.gov.uk &#8250; landregistry &#8250; searching &#8250; owner...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">... land, use the Owner Search on the Land Registry Services menu. Use 'Full owner ... Use a Registry of Deeds search to find unregistered land. No results? An ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://elasis.sarawak.gov.my/eLasis/processcategorySearch%3FsearchType%3DLand%2520Title&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAEQAg&amp;usg=AOvVaw0p1W6wSsDjoTz9QkhYhaBy" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAEQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Land Title - eLASIS - Sarawak Government</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">elasis.sarawak.gov.my &#8250; eLasis &#8250; processcategorySearch</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Land Registry Search · Land Rent &amp; Premium · Cart: 0 item (RM 0.00) · Strata Title · Land Title. Division *. KUCHING, SRI AMAN, SIBU, MIRI, LIMBANG, SARIKEI ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://services.india.gov.in/service/detail/check-your-land-records-for-uttar-pradesh&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAIQAg&amp;usg=AOvVaw3_RRBCFVnbVW_oi3_14ZR8" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAIQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Check your Land Records for Uttar Pradesh</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">services.india.gov.in &#8250; service &#8250; detail &#8250; check-your-land-...</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">... facility is provided by the Land Records Department of Uttar Pradesh State Government. Users can search details of land records by district and village name.</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.cheshireeast.gov.uk/planning/local_land_charges/request-land-search.aspx&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAUQAg&amp;usg=AOvVaw0i6CiGX1U-x1WuWfdrpT-a" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAUQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Request a local land search - Cheshire East Council</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.cheshireeast.gov.uk &#8250; planning &#8250; local_land_charges</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">For Cheshire East land and properties within the Peak District National Park, we can also include Peak Park searches. If you are a personal search company ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.solihull.gov.uk/Housing/Local-land-charges&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAQQAg&amp;usg=AOvVaw1ovENDVL7hOkBDv1NFpuaY" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAQQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Local land charge searches - Solihull Council</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.solihull.gov.uk &#8250; Housing &#8250; Local-land-charges</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Such requests should now be actioned directly through the HMLR Portal , Business Gateway and on HM Land Registry's GOV.UK pages. Highway information ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.onlinemortgageadvisor.co.uk/blog/everything-you-need-to-know-about-land-registry-searches/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECA8QAg&amp;usg=AOvVaw3TkD37o2vKf2oiBdVQ-i6a" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECA8QAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Everything You Need to Know About Land Registry Searches</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.onlinemortgageadvisor.co.uk &#8250; Blog</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd"><span class="r0bn4c rQMQod">18 thg 3, 2024</span><span class="r0bn4c rQMQod"> · </span>The purpose of a land registry search is to verify that the seller is the legal owner of the property you're looking to buy. Without this ...</div></div></div></div></div></div></div></div><div><div class="Gx5Zad fP1Qef xpd EtOod pkphOe"><div class="egMi0 kCrYT"><a href="/url?q=https://www.landata.online/&amp;sa=U&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAgQAg&amp;usg=AOvVaw23qJX0Yu71bBIKgqtGlE5e" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQFnoECAgQAg"><div class="DnJfK"><div class="j039Wc"><h3 class="zBAuLc l97dzf"><div class="BNeawe vvjwJb AP7Wnd">Landata</div></h3></div><div class="sCuL3"><div class="BNeawe UPmit AP7Wnd lRVwie">www.landata.online</div></div></div></a></div><div class="kCrYT"><div><div class="BNeawe s3v9rd AP7Wnd"><div><div><div class="BNeawe s3v9rd AP7Wnd">Victoria's online search service. Providing access to Victorian land title and property information ... Instrument search; Survey information; Water documents</div></div></div></div></div></div></div></div><div><div class="Gx5Zad xpd EtOod pkphOe"><div class="K8tyEc"><div class="mEUgP"><span><div class="BNeawe">N&#7897;i dung tìm ki&#7871;m khác</div></span></div></div><div><div class="gGQDvd iIWm4b"><a class="Q71vJc" href="/search?num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;q=Land+Registry+search+free&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEAI" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEAI"><accordion-entry-search-icon class="toMBf"><span><img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_1" data-deferred="1"></span></accordion-entry-search-icon><div class="kjGX2"><span class="Xe4YD"><div class="BNeawe lRVwie">Land Registry search free</div></span></div></a></div></div><div class="x54gtf"></div><div><div class="gGQDvd iIWm4b"><a class="Q71vJc" href="/search?num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;q=Free+Land+Registry+search+by+name&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEAQ" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEAQ"><accordion-entry-search-icon class="toMBf"><span><img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_5" data-deferred="1"></span></accordion-entry-search-icon><div class="kjGX2"><span class="Xe4YD"><div class="BNeawe lRVwie">Free Land Registry search by name</div></span></div></a></div></div><div class="x54gtf"></div><div><div class="gGQDvd iIWm4b"><a class="Q71vJc" href="/search?num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;q=Hm+land+registry&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEAY" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEAY"><accordion-entry-search-icon class="toMBf"><span><img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_9" data-deferred="1"></span></accordion-entry-search-icon><div class="kjGX2"><span class="Xe4YD"><div class="BNeawe lRVwie">Hm land registry</div></span></div></a></div></div><div class="x54gtf"></div><div><div class="gGQDvd iIWm4b"><a class="Q71vJc" href="/search?num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;q=Land+Registry+gov&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEAg" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEAg"><accordion-entry-search-icon class="toMBf"><span><img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_11" data-deferred="1"></span></accordion-entry-search-icon><div class="kjGX2"><span class="Xe4YD"><div class="BNeawe lRVwie">Land Registry gov</div></span></div></a></div></div><div class="x54gtf"></div><div><div class="gGQDvd iIWm4b"><a class="Q71vJc" href="/search?num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;q=Land+Registry+login&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEAo" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEAo"><accordion-entry-search-icon class="toMBf"><span><img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_15" data-deferred="1"></span></accordion-entry-search-icon><div class="kjGX2"><span class="Xe4YD"><div class="BNeawe lRVwie">Land Registry login</div></span></div></a></div></div><div class="x54gtf"></div><div><div class="gGQDvd iIWm4b"><a class="Q71vJc" href="/search?num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;q=Land+Registry+portal&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEAw" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEAw"><accordion-entry-search-icon class="toMBf"><span><img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_19" data-deferred="1"></span></accordion-entry-search-icon><div class="kjGX2"><span class="Xe4YD"><div class="BNeawe lRVwie">Land Registry portal</div></span></div></a></div></div><div class="x54gtf"></div><div><div class="gGQDvd iIWm4b"><a class="Q71vJc" href="/search?num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;q=Contact+Land+Registry&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEA4" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEA4"><accordion-entry-search-icon class="toMBf"><span><img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_23" data-deferred="1"></span></accordion-entry-search-icon><div class="kjGX2"><span class="Xe4YD"><div class="BNeawe lRVwie">Contact Land Registry</div></span></div></a></div></div><div class="x54gtf"></div><div><div class="gGQDvd iIWm4b"><a class="Q71vJc" href="/search?num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;q=Land+Registry+map&amp;sa=X&amp;ved=2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEBA" data-ved="2ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ1QJ6BAgGEBA"><accordion-entry-search-icon class="toMBf"><span><img class="OEaqif" alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:20px;max-height:20px" id="dimg_25" data-deferred="1"></span></accordion-entry-search-icon><div class="kjGX2"><span class="Xe4YD"><div class="BNeawe lRVwie">Land Registry map</div></span></div></a></div></div></div></div><footer> <div>  <div class="Gx5Zad xpd EtOod pkphOe BmP5tf"><div class="nMymef Va3FIb lVm3ye"><a class="nBDE1b G5eFlf" href="/search?q=land+registry+search&amp;num=100&amp;sca_esv=a4b2eda68720e90d&amp;sca_upv=1&amp;ie=UTF-8&amp;ei=TLosZv3cIZGo1e8Pq5WbyAE&amp;start=100&amp;sa=N" aria-label="Trang ti&#7871;p theo">Ti&#7871;p &gt;</a></div></div> </div>  <div id="EOlPnc"><div class="Srfpq"><div><span class="EYqSq unknown_loc"></span><span class="dfB0uf">Bình Tân, Thành ph&#7889; H&#7891; Chí Minh</span></div><span>D&#7921;a trên &#273;&#7883;a ch&#7881; IP c&#7911;a b&#7841;n</span><span>&nbsp;-&nbsp;</span><a class="IffyKc" href="/url?q=http://support.google.com/websearch%3Fp%3Dws_settings_location%26hl%3Dvi&amp;opi=89978449&amp;sa=U&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQty4I3gM&amp;usg=AOvVaw2zo7BtIkohxYVGRjVVDzlk" aria-label="Tìm hi&#7875;u thêm v&#7873; v&#7883; trí này" tabindex="0">Ti&#768;m hiê&#777;u thêm</a></div><div><a href="/url?q=https://accounts.google.com/ServiceLogin%3Fcontinue%3Dhttp://www.google.com/search%253Fnum%253D100%2526q%253Dland%252Bregistry%252Bsearch%26hl%3Dvi&amp;opi=89978449&amp;sa=U&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQxs8CCN8D&amp;usg=AOvVaw18fZaYHWdRmxdMQe7rhI89">&#272;&#259;ng nh&#7853;p</a></div><div><a class="xeDNfc" href="http://www.google.com/preferences?hl=vi&amp;fg=1&amp;sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQ5fUCCOAD">Cài &#273;&#7863;t</a><a class="xeDNfc" href="http://policies.google.com/privacy?hl=vi&amp;fg=1">Quyê&#768;n riêng t&#432;</a><a class="xeDNfc" href="http://policies.google.com/terms?hl=vi&amp;fg=1">&#272;i&#7873;u kho&#7843;n</a><a class="xeDNfc" href="/setprefs?hl=vi&amp;prev=http://www.google.com/search?num%3D100%26q%3Dland%2Bregistry%2Bsearch%26pccc%3D1&amp;sig=0_kmyfJJLo77CQg9F77wvYVNDA428%3D&amp;cs=2&amp;sa=X&amp;ved=0ahUKEwj9ssrt_-GFAxURVPUHHavKBhkQjcAJCOED">Giao di&#7879;n t&#7889;i: &#272;ang t&#7855;t</a></div></div> </footer>
+        <script nonce="mNvlqATyAynU-XLJ7LXqfA">
+    (function () {
+                var hl = 'vi'; (function () {
+                    var f = this || self, g = function (a) { return a }; var l = function (a, b) { this.g = a === h && b || ""; this.i = k }; l.prototype.toString = function () { return this.g }; var m = function (a) { return a instanceof l && a.constructor === l && a.i === k ? a.g : "type_error:Const" }, k = {}, h = {}; var p, q = function () { if (void 0 === p) { var a = null, b = f.trustedTypes; if (b && b.createPolicy) { try { a = b.createPolicy("goog#html", { createHTML: g, createScript: g, createScriptURL: g }) } catch (c) { f.console && f.console.error(c.message) } p = a } else p = a } return p }; var r = function (a) { this.g = a }; r.prototype.toString = function () { return this.g + "" }; var t = function (a) { return a instanceof r && a.constructor === r ? a.g : "type_error:TrustedResourceUrl" }, x = function () { var a = {}, b = m(new l(h, "/complete/search")); if (!u.test(b)) throw Error("e`" + b); var c = b.replace(v, function (e, d) { if (!Object.prototype.hasOwnProperty.call(a, d)) throw Error("f`" + d + "`" + b + "`" + JSON.stringify(a)); e = a[d]; return e instanceof l ? m(e) : encodeURIComponent(String(e)) }); return w(c) }, v = /%{(\w+)}/g, u = RegExp("^((https:)?//[0-9a-z.:[\\]-]+/|/[^/\\\\]|[^:/\\\\%]+/|[^:/\\\\%]*[?#]|about:blank#)", "i"), y = /^([^?#]*)(\?[^#]*)?(#[\s\S]*)?/, z = {}, w = function (a) { var b = q(); a = b ? b.createScriptURL(a) : a; return new r(a, z) }, A = function (a, b, c) { if (null == c) return b; if ("string" === typeof c) return c ? a + encodeURIComponent(c) : ""; for (var e in c) if (Object.prototype.hasOwnProperty.call(c, e)) { var d = c[e]; d = Array.isArray(d) ? d : [d]; for (var n = 0; n < d.length; n++) { var O = d[n]; null != O && (b || (b = a), b += (b.length > a.length ? "&" : "") + encodeURIComponent(e) + "=" + encodeURIComponent(String(O))) } } return b }; var B = {}, C = function (a) { this.g = a }; C.prototype.toString = function () { return this.g.toString() };
+                    function D(a, b) { if (1 === a.nodeType) { var c = a.tagName; if ("SCRIPT" === c || "STYLE" === c) throw Error("g"); } a.innerHTML = b instanceof C && b.constructor === C ? b.g : "type_error:SafeHtml" }; function E(a) { a = null === a ? "null" : void 0 === a ? "undefined" : a; var b = q(); a = b ? b.createHTML(a) : a; return new C(a, B) }; var F = document.querySelector(".l"), G = document.querySelector("#sf"), H = G.querySelector(".sbc"), I = G.querySelector("[type=text]"), J = G.querySelector("[type=submit]"), K = G.querySelector(".sc"), L = G.querySelector(".x"), M = I.value, N = [], P = -1, Q = M, R, S, T; M || (L && (L.style.display = "none"), U(!1)); function U(a) { if (H.classList.contains("esbc")) { var b = H.classList.contains("chsbc"), c = H.classList.contains("rtlsbc"); a && (K.style.display = "block", b ? (G.style.borderRadius = "20px 20px 0 0", K.style.borderBottom = "1px solid #DFE1E5", J.style.borderRadius = c ? "20px 0 0 0" : "0 20px 0 0") : H.style.borderRadius = c ? "0 8px 0 0" : "8px 0 0 0"); a || (K.style.display = "none", b ? (G.style.borderRadius = "20px", K.style.borderBottom = "none", J.style.borderRadius = c ? "20px 0 0 20px" : "0 20px 20px 0") : H.style.borderRadius = c ? "0 8px 8px 0" : "8px 0 0 8px") } } function V() { G.querySelector("[name=oq]").value = Q; G.querySelector("[name=aqs]").value = "heirloom-srp." + (0 <= P ? P : "") + "." + (0 < N.length ? "0l" + N.length : "") }
+                    function W() {
+                        R = null; if (S) {
+                            var a = { client: "heirloom-srp", hl: hl, json: "t", callback: "hS", q: S }; "undefined" !== typeof ds && ds && (a.ds = ds); var b = document; var c = "SCRIPT"; "application/xhtml+xml" === b.contentType && (c = c.toLowerCase()); c = b.createElement(c); b = x(); b = y.exec(t(b).toString()); var e = b[3] || ""; a = w(b[1] + A("?", b[2] || "", a) + A("#", e)); c.src = t(a); var d, n; (d = (a = null == (n = (d = (c.ownerDocument && c.ownerDocument.defaultView || window).document).querySelector) ? void 0 : n.call(d, "script[nonce]")) ? a.nonce || a.getAttribute("nonce") ||
+                                "" : "") && c.setAttribute("nonce", d); document.body.appendChild(c); S = null; R = setTimeout(W, 500)
+                        }
+                    } function X() { for (; K.firstChild;)K.removeChild(K.firstChild); N = []; P = -1; U(!1) } function Y() { var a = K.querySelector(".scs"); a && (a.className = ""); 0 <= P ? (a = K.childNodes[P], a.className = "scs", M = a.textContent) : M = Q; I.value = M } I.addEventListener("focus", function () { F && (F.style.display = "none") }, !1); I.addEventListener("blur", function () { X(); F && (F.style.display = "") }, !1); I.addEventListener("keyup", function (a) { M = I.value; T = !1; 13 === a.which ? V() : 27 === a.which ? (X(), F && (F.style.display = ""), M = Q, I.value = M) : 40 === a.which ? (P++, P >= N.length && (P = -1), Y()) : 38 === a.which ? (P--, -1 > P && (P = N.length - 1), Y()) : (a = M) ? (L && (L.style.display = ""), S = a, R || W(), Q = a) : (L && (L.style.display = "none"), U(!1), X(), Q = "", T = !0) }, !1); J.addEventListener("click", V, !1); L.addEventListener("click", function () { I.value = ""; L.style.display = "none"; U(!1) }, !1); H.addEventListener("click", function () { I.focus() }, !1); window.hS = function (a) { if (!T) { X(); 0 === a[1].length && U(!1); for (var b = 0; b < a[1].length; b++) { var c = a[1][b][0], e = document.createElement("div"); D(e, E(c)); e.addEventListener("mousedown", function (d) { d.preventDefault(); return !1 }, !1); c = c.replace(/<\/?b>/g, ""); e.addEventListener("click", function (d) { return function () { P = d; V(); Y(); X(); G.submit() } }(b), !1); e.addEventListener("mouseover", function (d) { return function () { P !== d && (P = d, Y()) } }(b), !1); K.appendChild(e); U(!0); N.push(c) } } };
+                }).call(this);
+            })(); (function () { function b(a) { for (a = a.target || a.srcElement; a && "A" !== a.nodeName;)a = a.parentElement; a && (a.href || "").match(/\/search.*[?&]tbm=isch/) && (a.href += "&biw=" + document.documentElement.clientWidth, a.href += "&bih=" + document.documentElement.clientHeight) } document.addEventListener("click", b, !1); document.addEventListener("touchStart", b, !1); }).call(this);</script>
+    </div><!-- cctlcm 5 cctlcm --><textarea class="csi" name="csi" style="display:none"></textarea>
+    <script nonce="mNvlqATyAynU-XLJ7LXqfA">
+    (function () {
+            var e = 'TLosZv3cIZGo1e8Pq5WbyAE'; var sn = 'web'; var timl = false; (function () {
+                function C(a) { if (!a || D(a)) return 0; if (!a.getBoundingClientRect) return 1; var c = function (d) { return d.getBoundingClientRect() }; if (E(a, c)) return 0; var b; return K(a, c, null == (b = google.c) ? void 0 : b.cvb) }
+                function E(a, c) { var b; a: { for (b = a; b && null !== b; b = b.parentElement)if ("hidden" === b.style.overflow || "G-EXPANDABLE-CONTENT" === b.tagName && "hidden" === getComputedStyle(b).getPropertyValue("overflow")) break a; b = null } if (!b) return !1; a = c(a); c = c(b); return a.bottom < c.top || a.top >= c.bottom || a.right < c.left || a.left >= c.right }
+                function D(a) { return "none" === a.style.display ? !0 : document.defaultView && document.defaultView.getComputedStyle ? (a = document.defaultView.getComputedStyle(a), !!a && ("hidden" === a.visibility || "0px" === a.height && "0px" === a.width)) : !1 }
+                function K(a, c) { var b = c(a); a = b.left + window.pageXOffset; c = b.top + window.pageYOffset; var d = b.width; b = b.height; var f = 0; if (0 >= b && 0 >= d) return f; var q = window.innerHeight || document.documentElement.clientHeight; 0 > c + b ? f = 2 : c >= q && (f = 4); if (0 > a + d || a >= (window.innerWidth || document.documentElement.clientWidth)) f |= 8; f || (f = 1, c + b > q && (f |= 4)); return f }; var L = e, M = sn, N = "undefined" === typeof de ? !0 : !1 !== de, O = []; function P(a, c, b) { a = "/gen_204?atyp=csi&s=" + M + "&t=" + a + ("&lite=1&ei=" + L + "&conn=" + (window.navigator && window.navigator.connection ? window.navigator.connection.type : -1) + c); c = "&rt="; for (var d in b) a += "" + c + d + "." + b[d], c = ","; return a } function Q(a) { a = { prt: a }; window.wsrt && (a.wsrt = window.wsrt); return a } function R(a) { window.ping ? window.ping(a) : (new Image).src = a }
+                (function () {
+                    for (var a = (new Date).getTime() - window.start, c = Q(a), b = 0, d = 0, f = 0, q = document.getElementsByTagName("img"), r = N ? "&biw=" + window.innerWidth + "&bih=" + window.innerHeight : "", F = function () { r += "&ima=" + f; c.aft = b; R(P("aft", r, c)) }, y = 0, S = function (g, t, u) { var n = g.src; g.onload = function () { u && n && n === g.src || (d = (new Date).getTime() - window.start, t && ++y === f && (b = d, F()), g.onload = null) } }, T = 0, h = void 0; h = q[T++];) {
+                        var v = C(h), p = !!(v & 1); p && ++f; var l = h.hasAttribute("data-ilite"), w = h.hasAttribute("data-deferred"), G = h.hasAttribute("data-src") ||
+                            h.hasAttribute("data-lzysrc"), z = !w && !l && G; O.push([v, w || l, z, h.id, l && G]); l = (v = h.complete && !w && !(p && z)) && Number(h.getAttribute("data-iml")) || 0; v && l ? (p && ++y, l && (h = l - window.start, p && (b = Math.max(b, h)), d = Math.max(d, h))) : S(h, p, w || z)
+                    } b || (b = a); d || (d = b); y === f && F(); google.rglh && google.rglh(); window.addEventListener("load", function () {
+                        window.setTimeout(function () {
+                            c.ol = (new Date).getTime() - window.start; timl && (c.iml = d); var g = window.performance && window.performance.timing; g && (c.rqst = g.responseEnd - g.requestStart, c.rspt =
+                                g.responseEnd - g.responseStart); for (var t = g = 0, u = 0, n = 0, H = 0, I = 0, U = 0, k; k = O[U++];) { var m = k[0], A = k[1], J = k[2], x = k[3]; k = k[4] || google.ldi && x && google.ldi[x]; x = 0 == m; var V = m & 8, B = m & 1; m = !B && m & 4; B && (A && !k || ++u, J && ++I); A && (B && k && ++g, m && !k && ++t); x || V ? J || ++H : A || ++n } r += "&ime=" + u + "&imel=" + I + ("&imex=" + n + "&imeh=" + H) + ("&imea=" + g + "&imeb=" + t); R(P("all", r, c))
+                        }, 0)
+                    }, !1)
+                })();
+            }).call(this);
+        })(); (function () { window.google = window.google || {}; window.google.ishk = []; function a() { return window.scrollY + window.document.documentElement.clientHeight >= Math.max(document.body.scrollHeight, document.body.offsetHeight) } function b() { a() && 0 === window.google.ishk.length && (window.google.bs = !0, window.removeEventListener("scroll", b)) } a() ? window.google.bs = !0 : (window.google.bs = !1, window.addEventListener("scroll", b)); }).call(this);</script>
+    <script nonce="mNvlqATyAynU-XLJ7LXqfA">
+    window._setImagesSrc = function (f, c) { function h(a) { a.onerror = function () { a.style.display = "none" }; a.setAttribute("data-deferred", "2"); "data:" !== c.substring(0, 5) && a.setAttribute("data-defe", "1"); a.src = c; var g; (null == (g = google.c) ? 0 : g.di) && a.decode() } for (var d = 0; d < f.length; ++d) { var b = f[d], e = document.getElementById(b) || document.querySelector('img[data-iid="' + b + '"]'); e ? (b = void 0, (null == (b = google.c) ? 0 : b.setup) && google.c.setup(e), h(e)) : (google.iir = google.iir || {}, google.iir[b] = c) } }; "undefined" === typeof window.google && (window.google = {}); (function () { var e = 'TLosZv3cIZGo1e8Pq5WbyAE'; (function () { var a = e; if (2 === (window.performance && window.performance.navigation && window.performance.navigation.type)) { var b = "", c = [], d = void 0 !== window.google && void 0 !== window.google.kOPI && 0 !== window.google.kOPI ? window.google.kOPI : null; null != d && c.push(["opi", d.toString()]); for (var f = 0; f < c.length; f++) { if (0 === f || 0 < f) b += "&"; b += c[f][0] + "=" + c[f][1] } window.ping("/gen_204?ct=backbutton&ei=" + a + b) }; }).call(this); })(); (function () { var b = [function () { google.tick && google.tick("load", "dcl") }]; google.dclc = function (a) { b.length ? b.push(a) : a() }; function c() { for (var a = b.shift(); a;)a(), a = b.shift() } window.addEventListener ? (document.addEventListener("DOMContentLoaded", c, !1), window.addEventListener("load", c, !1)) : window.attachEvent && window.attachEvent("onload", c); }).call(this); (function () { google.ldi = { "dimg_3": "http://t0.gstatic.com/images?q\u003dtbn:ANd9GcRtVYH1vSeBkTbm1rn55RV_6NqCr0U--rQqvSj4zVuQWvcEq50Xr2AnaOYS9Q\u0026s", "dimg_7": "http://t0.gstatic.com/images?q\u003dtbn:ANd9GcSiznIfSfDcGFRSuggyKlaAMjQ5xZwC1bhMEIcJ2mlWZhpROiqIIironE0_mrE\u0026s", "dimg_13": "http://t0.gstatic.com/images?q\u003dtbn:ANd9GcQgmwWNZj4Rv6YtNvw5FMDnMMAI4fL468NEDkitlbIKh1Autpgp3fqV-QuS\u0026s", "dimg_17": "http://t0.gstatic.com/images?q\u003dtbn:ANd9GcSrKPjD-pa1yj_LXolERY80WLoCkvz2-sH3McfinGA07MMX8M5zu63UrmVokYU\u0026s", "dimg_21": "http://t0.gstatic.com/images?q\u003dtbn:ANd9GcT33arQyo7lHsFmjNm2DB9btEVXCADeVdx1U10is7LrYFFzWylbYXrYyyK_aA\u0026s", "dimg_27": "http://t0.gstatic.com/images?q\u003dtbn:ANd9GcQFUAZUu4EdmJZJXKEHyJLIs3IxS3G1v0PeyWNBX5YoacCg8CgjO-H_0JOpRyc\u0026s", "dimg_1": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABAUlEQVR4AWMYesChoYElLjkzPj4lY3d8csZjIL4MxPNjUzPcSTYsISFLAqj5NBD/h+LPQPwbiT87NCuLh2gDgRr2QzXuT0jNMoBYksARn5zuHJ+UcR0kB6RXE2VYXHJGOlTDZmzyIJcB5e+D1CSkZDgQNBAaZv+jU1JkcKpJygiGeZ0I76a/Byq8jU9NZFqaCNTA48SE33/iDcw8TIyBt0GKQTFN0Msp6f2EIyUpo57YSIlLSrMhIg0WCIBcCfXSdlzJBsheTHQ6jEnOUgEFOLaEDbMIlhZBOYrorAdJk+nroVnvPsSgdGdoOF7HZyhZ2XPoGQoqjbCpIbt0AiejIQMArVLI7k/DXFkAAAAASUVORK5CYII\u003d", "dimg_5": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABAUlEQVR4AWMYesChoYElLjkzPj4lY3d8csZjIL4MxPNjUzPcSTYsISFLAqj5NBD/h+LPQPwbiT87NCuLh2gDgRr2QzXuT0jNMoBYksARn5zuHJ+UcR0kB6RXE2VYXHJGOlTDZmzyIJcB5e+D1CSkZDgQNBAaZv+jU1JkcKpJygiGeZ0I76a/Byq8jU9NZFqaCNTA48SE33/iDcw8TIyBt0GKQTFN0Msp6f2EIyUpo57YSIlLSrMhIg0WCIBcCfXSdlzJBsheTHQ6jEnOUgEFOLaEDbMIlhZBOYrorAdJk+nroVnvPsSgdGdoOF7HZyhZ2XPoGQoqjbCpIbt0AiejIQMArVLI7k/DXFkAAAAASUVORK5CYII\u003d", "dimg_9": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABAUlEQVR4AWMYesChoYElLjkzPj4lY3d8csZjIL4MxPNjUzPcSTYsISFLAqj5NBD/h+LPQPwbiT87NCuLh2gDgRr2QzXuT0jNMoBYksARn5zuHJ+UcR0kB6RXE2VYXHJGOlTDZmzyIJcB5e+D1CSkZDgQNBAaZv+jU1JkcKpJygiGeZ0I76a/Byq8jU9NZFqaCNTA48SE33/iDcw8TIyBt0GKQTFN0Msp6f2EIyUpo57YSIlLSrMhIg0WCIBcCfXSdlzJBsheTHQ6jEnOUgEFOLaEDbMIlhZBOYrorAdJk+nroVnvPsSgdGdoOF7HZyhZ2XPoGQoqjbCpIbt0AiejIQMArVLI7k/DXFkAAAAASUVORK5CYII\u003d", "dimg_11": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABAUlEQVR4AWMYesChoYElLjkzPj4lY3d8csZjIL4MxPNjUzPcSTYsISFLAqj5NBD/h+LPQPwbiT87NCuLh2gDgRr2QzXuT0jNMoBYksARn5zuHJ+UcR0kB6RXE2VYXHJGOlTDZmzyIJcB5e+D1CSkZDgQNBAaZv+jU1JkcKpJygiGeZ0I76a/Byq8jU9NZFqaCNTA48SE33/iDcw8TIyBt0GKQTFN0Msp6f2EIyUpo57YSIlLSrMhIg0WCIBcCfXSdlzJBsheTHQ6jEnOUgEFOLaEDbMIlhZBOYrorAdJk+nroVnvPsSgdGdoOF7HZyhZ2XPoGQoqjbCpIbt0AiejIQMArVLI7k/DXFkAAAAASUVORK5CYII\u003d", "dimg_15": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABAUlEQVR4AWMYesChoYElLjkzPj4lY3d8csZjIL4MxPNjUzPcSTYsISFLAqj5NBD/h+LPQPwbiT87NCuLh2gDgRr2QzXuT0jNMoBYksARn5zuHJ+UcR0kB6RXE2VYXHJGOlTDZmzyIJcB5e+D1CSkZDgQNBAaZv+jU1JkcKpJygiGeZ0I76a/Byq8jU9NZFqaCNTA48SE33/iDcw8TIyBt0GKQTFN0Msp6f2EIyUpo57YSIlLSrMhIg0WCIBcCfXSdlzJBsheTHQ6jEnOUgEFOLaEDbMIlhZBOYrorAdJk+nroVnvPsSgdGdoOF7HZyhZ2XPoGQoqjbCpIbt0AiejIQMArVLI7k/DXFkAAAAASUVORK5CYII\u003d", "dimg_19": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABAUlEQVR4AWMYesChoYElLjkzPj4lY3d8csZjIL4MxPNjUzPcSTYsISFLAqj5NBD/h+LPQPwbiT87NCuLh2gDgRr2QzXuT0jNMoBYksARn5zuHJ+UcR0kB6RXE2VYXHJGOlTDZmzyIJcB5e+D1CSkZDgQNBAaZv+jU1JkcKpJygiGeZ0I76a/Byq8jU9NZFqaCNTA48SE33/iDcw8TIyBt0GKQTFN0Msp6f2EIyUpo57YSIlLSrMhIg0WCIBcCfXSdlzJBsheTHQ6jEnOUgEFOLaEDbMIlhZBOYrorAdJk+nroVnvPsSgdGdoOF7HZyhZ2XPoGQoqjbCpIbt0AiejIQMArVLI7k/DXFkAAAAASUVORK5CYII\u003d", "dimg_23": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABAUlEQVR4AWMYesChoYElLjkzPj4lY3d8csZjIL4MxPNjUzPcSTYsISFLAqj5NBD/h+LPQPwbiT87NCuLh2gDgRr2QzXuT0jNMoBYksARn5zuHJ+UcR0kB6RXE2VYXHJGOlTDZmzyIJcB5e+D1CSkZDgQNBAaZv+jU1JkcKpJygiGeZ0I76a/Byq8jU9NZFqaCNTA48SE33/iDcw8TIyBt0GKQTFN0Msp6f2EIyUpo57YSIlLSrMhIg0WCIBcCfXSdlzJBsheTHQ6jEnOUgEFOLaEDbMIlhZBOYrorAdJk+nroVnvPsSgdGdoOF7HZyhZ2XPoGQoqjbCpIbt0AiejIQMArVLI7k/DXFkAAAAASUVORK5CYII\u003d", "dimg_25": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAABAUlEQVR4AWMYesChoYElLjkzPj4lY3d8csZjIL4MxPNjUzPcSTYsISFLAqj5NBD/h+LPQPwbiT87NCuLh2gDgRr2QzXuT0jNMoBYksARn5zuHJ+UcR0kB6RXE2VYXHJGOlTDZmzyIJcB5e+D1CSkZDgQNBAaZv+jU1JkcKpJygiGeZ0I76a/Byq8jU9NZFqaCNTA48SE33/iDcw8TIyBt0GKQTFN0Msp6f2EIyUpo57YSIlLSrMhIg0WCIBcCfXSdlzJBsheTHQ6jEnOUgEFOLaEDbMIlhZBOYrorAdJk+nroVnvPsSgdGdoOF7HZyhZ2XPoGQoqjbCpIbt0AiejIQMArVLI7k/DXFkAAAAASUVORK5CYII\u003d" }; (function () { google.dclc(function () { for (var a in google.ldi) window._setImagesSrc([a], google.ldi[a]) }); }).call(this); })(); (function () {
+            var b = function (a) { var c = 0; return function () { return c < a.length ? { done: !1, value: a[c++] } : { done: !0 } } };
+            var e = this || self; var g, h; a: { for (var k = ["CLOSURE_FLAGS"], l = e, n = 0; n < k.length; n++)if (l = l[k[n]], null == l) { h = null; break a } h = l } var p = h && h[610401301]; g = null != p ? p : !1; var q, r = e.navigator; q = r ? r.userAgentData || null : null; function t(a) { return g ? q ? q.brands.some(function (c) { return (c = c.brand) && -1 != c.indexOf(a) }) : !1 : !1 } function u(a) { var c; a: { if (c = e.navigator) if (c = c.userAgent) break a; c = "" } return -1 != c.indexOf(a) }; function v() { return g ? !!q && 0 < q.brands.length : !1 } function w() { return u("Safari") && !(x() || (v() ? 0 : u("Coast")) || (v() ? 0 : u("Opera")) || (v() ? 0 : u("Edge")) || (v() ? t("Microsoft Edge") : u("Edg/")) || (v() ? t("Opera") : u("OPR")) || u("Firefox") || u("FxiOS") || u("Silk") || u("Android")) } function x() { return v() ? t("Chromium") : (u("Chrome") || u("CriOS")) && !(v() ? 0 : u("Edge")) || u("Silk") } function y() { return u("Android") && !(x() || u("Firefox") || u("FxiOS") || (v() ? 0 : u("Opera")) || u("Silk")) }; var z = v() ? !1 : u("Trident") || u("MSIE"); y(); x(); w(); Object.freeze(new function () { }); Object.freeze(new function () { }); var A = !z && !w(), D = function (a) { if (/-[a-z]/.test("ved")) return null; if (A && a.dataset) { if (y() && !("ved" in a.dataset)) return null; a = a.dataset.ved; return void 0 === a ? null : a } return a.getAttribute("data-" + "ved".replace(/([A-Z])/g, "-$1").toLowerCase()) }; var E = [], F = null; function G(a) {
+                a = a.target; var c = performance.now(), f = [], H = f.concat, d = E; if (!(d instanceof Array)) { var m = "undefined" != typeof Symbol && Symbol.iterator && d[Symbol.iterator]; if (m) d = m.call(d); else if ("number" == typeof d.length) d = { next: b(d) }; else throw Error("a`" + String(d)); for (var B = []; !(m = d.next()).done;)B.push(m.value); d = B } E = H.call(f, d, [c]); if (a && a instanceof HTMLElement) if (a === F) {
+                    if (c = 4 <= E.length) c = 5 > (E[E.length - 1] - E[E.length - 4]) / 1E3; if (c) {
+                        c = google.getEI(a); a.hasAttribute("data-ved") ? f = a ? D(a) || "" : "" : f = (f =
+                            a.closest("[data-ved]")) ? D(f) || "" : ""; f = f || ""; if (a.hasAttribute("jsname")) a = a.getAttribute("jsname"); else { var C; a = null == (C = a.closest("[jsname]")) ? void 0 : C.getAttribute("jsname") } google.log("rcm", "&ei=" + c + "&ved=" + f + "&jsname=" + (a || ""))
+                    }
+                } else F = a, E = [c]
+            } window.document.addEventListener("DOMContentLoaded", function () { document.body.addEventListener("click", G) });
+        }).call(this); var w = function (a) { var b = 0; return function () { return b < a.length ? { done: !1, value: a[b++] } : { done: !0 } } }; window.jsl = window.jsl || {}; window.jsl.dh = function (a, b, m) {
+            try {
+                var h = document.getElementById(a), e; if (!h && (null == (e = google.stvsc) ? 0 : e.dds)) { e = []; var f = e.concat, c = google.stvsc.dds; if (c instanceof Array) var n = c; else { var p = "undefined" != typeof Symbol && Symbol.iterator && c[Symbol.iterator]; if (p) var g = p.call(c); else if ("number" == typeof c.length) g = { next: w(c) }; else throw Error(String(c) + " is not an iterable or ArrayLike"); c = g; var q; for (g = []; !(q = c.next()).done;)g.push(q.value); n = g } var r = f.call(e, n); for (f = 0; f < r.length && !(h = r[f].getElementById(a)); f++); } if (h) h.innerHTML = b, m && m(); else {
+                    var d = { id: a, script: String(!!m), milestone: String(google.jslm || 0) }; google.jsla && (d.async = google.jsla); var t = a.indexOf("_"), k = 0 < t ? a.substring(0, t) : "", u = document.createElement("div"); u.innerHTML = b; var l = u.children[0]; if (l && (d.tag = l.tagName, d["class"] = String(l.className || null), d.name = String(l.getAttribute("jsname")), k)) { a = []; var v = document.querySelectorAll('[id^="' + k + '_"]'); for (b = 0; b < v.length; ++b)a.push(v[b].id); d.ids = a.join(",") } google.ml(Error(k ? "Missing ID with prefix " +
+                        k : "Missing ID"), !1, d)
+                }
+            } catch (x) { google.ml(x, !0, { "jsl.dh": !0 }) }
+        }; (function () { var x = false; google.jslm = x ? 2 : 1; })(); (function () { (function () { google.csct = {}; google.csct.ps = 'AOvVaw1WJhL6sQdg-qHXJzCgO8S-\x26ust\x3d1714293708595025'; })(); })(); (function () { (function () { google.csct.rd = true; })(); })(); (function () { (function () { google.csct.rl = true; })(); })(); if (!google.stvsc) { google.drty && google.drty(undefined, true); }
+    </script>
+</body>
+</html>

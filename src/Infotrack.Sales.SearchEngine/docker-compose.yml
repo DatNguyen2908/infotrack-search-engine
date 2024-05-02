@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  infotrack.sales.searchengine.webapi:
+    image: ${DOCKER_REGISTRY-}infotracksalessearchenginewebapi
+    build:
+      context: .
+      dockerfile: Infotrack.Sales.SearchEngine.WebApi/Dockerfile
+
+  infotrack.sales.searchengine.webapp:
+    image: ${DOCKER_REGISTRY-}infotracksalessearchenginewebapp
+    build:
+      context: .
+      dockerfile: Infotrack.Sales.SearchEngine.WebApp/Dockerfile
+
+  infotrack.sales.searchengine.sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: infotrack.sales.searchengine.sqlserver

@@ -1,0 +1,116 @@
+﻿<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+<script>
+    var myChart;
+    function LoadChart(response) {
+        const data = {
+            datasets: [{
+                label: 'Website Search Rankings',
+                data: response.map(function (history) {
+                    return {
+                        x: new Date(history.searchDate + 'Z'),
+                        y: history.rank
+                    };
+                }),
+                backgroundColor: [
+                    'rgba(255, 26, 104, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(0, 0, 0, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 26, 104, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(0, 0, 0, 1)'
+                ],
+                borderWidth: 1
+            }]
+        };
+
+        // config
+        const config = {
+            type: 'line',
+            data,
+            options: {
+                scales: {
+                    x: {
+                        type: 'time',
+                        time: {
+                            unit: 'hour'
+                        },
+                        min: getStartDay(),
+                        max: getEndDay()
+                    },
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        };
+
+        // render init block
+        myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+
+        $('#btnFilterHour').show();
+        $('#btnFilterDaily').show();
+        $('#btnFilterWeekly').show();
+    }
+
+    function filterTime(time) {
+        myChart.config.options.scales.x.time.unit = time;
+
+        if (time === 'hour') {
+            myChart.config.options.scales.x.min = getStartDay();
+            myChart.config.options.scales.x.max = getEndDay();
+        } else if (time === 'day') {
+            myChart.config.options.scales.x.min = getMonday();
+            myChart.config.options.scales.x.max = getSunday();
+        } else if (time === 'week') {
+            myChart.config.options.scales.x.min = getFirstDayOfTheMonth();
+            myChart.config.options.scales.x.max = getLastDayOfTheMonth();
+        }
+
+        myChart.update();
+    }
+    
+    function getStartDay() {
+        return new Date(new Date().setHours(0, 0, 0, 0));
+    }
+
+    function getEndDay() {
+        return new Date(new Date().setHours(23, 59, 59, 999));
+    }
+
+    function getMonday() {
+        const date = new Date();
+        const day = date.getDay();
+        const diff = date.getDate() - day + (day === 0 ? -6 : 1);
+        return new Date(date.setDate(diff));
+    }
+
+    function getSunday() {
+        var monday = new Date(getMonday());
+        return new Date(monday.setDate(monday.getDate() + 6));
+    }
+
+    function getFirstDayOfTheMonth() {
+        var date = new Date();
+        return new Date(date.getFullYear(), date.getMonth(), 1);
+    }
+
+    function getLastDayOfTheMonth() {
+        var date = new Date();
+        return new Date(date.getFullYear(), date.getMonth() + 1, 0);
+    }
+</script>
