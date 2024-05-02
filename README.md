@@ -2,6 +2,8 @@
 
 ## Purpose
 - Supports the CTO of Infotrack to check their website rankings in Google (Might support to search by other providers later).
+  
+![alt text](https://github.com/DatNguyen2908/infotrack-search-engine/blob/main/Screenshots/Main%20page.PNG)
 
 ## Technical Overview:
 - .NET 8 LTS (In particular, Web API using ASP.NET Core Web API & Web UI using ASP.NET Core Web App).
