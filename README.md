@@ -1,7 +1,7 @@
-# Infotrack Search Engine
+# InfoTrack Search Engine
 
 ## Purposes:
-- Supports the CTO of Infotrack to check their website rankings in Google (Might support to search by other providers later).
+- Supports the CTO of InfoTrack to check their website rankings in Google (Might support to search by other providers later).
   
 ![alt text](https://github.com/DatNguyen2908/infotrack-search-engine/blob/main/Screenshots/Main%20page.PNG)
 
