@@ -8,7 +8,7 @@
 ## Technical Overview:
 - .NET 8 LTS (In particular, Web API using ASP.NET Core Web API & Web UI using ASP.NET Core Web App).
 - Docker (In case we would like to minimum configuration).
-- **Kubernetes (It's coming)**.
+- **Kubernetes**.
 - JQuery & ChartJS to draw the chart.
 
 ## How to excute:
