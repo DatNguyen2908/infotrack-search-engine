@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: infotrack-search-engine-webapp-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: infotrack-search-engine-webapp
+  template:
+    metadata:
+      labels:
+        app: infotrack-search-engine-webapp
+    spec:
+      containers:
+        - name: infotracksalessearchenginewebapp
+          image: lukasnguyen2908/infotracksalessearchenginewebapp:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          env:
+            - name: ASPNETCORE_ENVIRONMENT
+              value: Development
+            - name: ASPNETCORE_HTTP_PORTS
+              value: "80"
+            - name: InfotrackWebApiBaseAddress
+              valueFrom:
+                configMapKeyRef:
+                  name: infotrack-search-engine-webapp-configmap
+                  key: infotrack_webapi_base_address
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: infotrack-search-engine-webapp-service
+spec:
+  selector:
+    app: infotrack-search-engine-webapp
+  type: NodePort
+  ports:
+    - protocol: TCP
+      port: 8001
+      targetPort: 80
+      nodePort: 30000

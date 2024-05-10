@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: infotrack-search-engine-sqlserver-deployment
+spec:
+  serviceName: infotrack-search-engine-sqlserver-service
+  replicas: 1
+  selector:
+    matchLabels:
+      app: infotrack-search-engine-sqlserver
+  template:
+    metadata:
+      labels:
+        app: infotrack-search-engine-sqlserver
+    spec:
+      containers:
+        - name: infotracksalessearchenginesqlserver
+          image: mcr.microsoft.com/mssql/server:2022-latest
+          ports:
+            - containerPort: 1433
+          env:
+            - name: ACCEPT_EULA
+              value: "Y"
+            - name: MSSQL_PID
+              value: Express
+            - name: SA_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: infotrack-search-engine-sqlserver-secret
+                  key: sa_password
+          volumeMounts:
+            - mountPath: /var/opt/mssql 
+              name: data
+  volumeClaimTemplates:
+    - metadata:
+         name: data
+      spec:
+        accessModes:
+          - ReadWriteOnce 
+        resources:
+          requests:
+            storage: 2Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: infotrack-search-engine-sqlserver-service
+spec:
+  selector:
+    app: infotrack-search-engine-sqlserver
+  ports:
+  - protocol: TCP
+    port: 1433
+    targetPort: 1433

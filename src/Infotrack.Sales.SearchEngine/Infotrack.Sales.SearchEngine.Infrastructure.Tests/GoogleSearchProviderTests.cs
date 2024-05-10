@@ -79,7 +79,7 @@ namespace Infotrack.Sales.SearchEngine.Infrastructure.Tests
                 .Protected()
                 .Setup<Task<HttpResponseMessage>>(
                     "SendAsync",
-                    ItExpr.Is<HttpRequestMessage>(x => x.RequestUri == new Uri($"http://www.google.com/search?num={_googleSearchOptionsMock.Object.Value.NumbersOfSearchResults}&q={Uri.EscapeDataString(input.Keyword)}")),
+                    ItExpr.Is<HttpRequestMessage>(x => x.RequestUri == new Uri($"https://google.co.uk/search?num={_googleSearchOptionsMock.Object.Value.NumbersOfSearchResults}&q={Uri.EscapeDataString(input.Keyword)}")),
                     ItExpr.IsAny<CancellationToken>()
                 )
                 .ReturnsAsync(new HttpResponseMessage
@@ -92,7 +92,7 @@ namespace Infotrack.Sales.SearchEngine.Infrastructure.Tests
             _httpClientFactoryMock.Setup(x => x.CreateClient(ApiClientConstants.GoogleApiClient))
                 .Returns(new HttpClient(_handlerMock.Object)
                 {
-                    BaseAddress = new Uri("http://www.google.com/")
+                    BaseAddress = new Uri("https://google.co.uk/")
                 });
         }
     }

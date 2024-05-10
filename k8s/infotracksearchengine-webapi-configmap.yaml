@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: infotrack-search-engine-webapi-configmap
+data:
+  google_base_address: https://google.co.uk/
+  bing_base_address: http://www.bing.com/
+  infotrack_webapp_base_address: http://infotrack-search-engine-webapp-service:8001/
+  google_search_classes_contain_url: "BNeawe UPmit AP7Wnd lRVwie"
+  google_search_numbers_of_search_results: "100"
