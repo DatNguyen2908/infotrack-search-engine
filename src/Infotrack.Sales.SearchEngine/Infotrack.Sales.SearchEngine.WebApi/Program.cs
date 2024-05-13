@@ -10,6 +10,7 @@ using Infotrack.Sales.SearchEngine.Infrastructure;
 using Infotrack.Sales.SearchEngine.WebApi.Filters;
 using Infotrack.Sales.SearchEngine.WebApi.Validators;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Http.Resilience;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +30,12 @@ builder.Services.Configure<GoogleSearchOptions>(builder.Configuration.GetSection
 builder.Services.AddHttpClient(ApiClientConstants.GoogleApiClient, config =>
 {
     config.BaseAddress = new Uri(builder.Configuration.GetValue<string>("GoogleBaseAddress"));
+})
+.AddStandardResilienceHandler(options =>
+{
+    options.RateLimiter.DefaultRateLimiterOptions.PermitLimit = 3;
+
+    options.TotalRequestTimeout.Timeout = TimeSpan.FromSeconds(5);
 });
 
 builder.Services.AddCors(options =>
