@@ -38,3 +38,4 @@
 - I've already written the neccessary unit tests for Google Search so the production code has been covered as well.
 - The CTO can view historical search results in the Chart (supports hour, daily, weekly basis as of now). 
 - In case CTO requests to search their website rankings by another provider, the developer can easily develop and extend it. I've already applied Strategy Pattern to support it.
+- HTTP Fault Handling with .NET 8 standard resilience configuration. 
